@@ -20,6 +20,7 @@ public class LoginPage {
     public LoginPage(WebDriver driver) {
         this.driver=driver;
     }
+
     public void typeUserName(String user){
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.findElement(userName).sendKeys(user);

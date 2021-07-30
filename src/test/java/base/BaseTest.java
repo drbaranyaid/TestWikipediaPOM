@@ -17,6 +17,10 @@ public class BaseTest {
     protected String pass = "kukac423";
     protected String userFalse="GezaNagy";
     protected String passFalse = "páva987";
+    protected String userFalse2=" ";
+    protected String passFalse2 = " ";
+    protected String email = "zalog39@freemail.hu ";
+
     String URL = "https://en.wikipedia.org/wiki/Main_Page";
 
     public WebDriver getDriver() {

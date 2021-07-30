@@ -32,5 +32,13 @@ public class LoginPageTest extends BaseTest {
         loginPage.clickLoginButton();
         Assertions.assertTrue(driver.findElement(errorbox).isDisplayed());
     }
-
+    @Test
+    public void ZeroLogIn() {
+        homePage.clickLoginButton();
+        loginPage = new LoginPage(driver);
+        loginPage.typeUserName(userFalse2);
+        loginPage.typePassword(passFalse2);
+        loginPage.clickLoginButton();
+        Assertions.assertTrue(driver.findElement(errorbox).isDisplayed());
+    }
 }
