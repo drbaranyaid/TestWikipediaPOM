@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Fri Jul 30 21:47:18 GMT 2021","Fri Jul 30 21:47:18 GMT 2021","208","","loginpage.LoginPageTest","","loginpage.LoginPageTest","invalidLoginCheck","invalidLoginCheck()",""
+"broken","Fri Jul 30 21:47:18 GMT 2021","Fri Jul 30 21:47:18 GMT 2021","234","","homepage.HomePageTest","","homepage.HomePageTest","pageCheckCreateAccount","pageCheckCreateAccount()",""
+"broken","Fri Jul 30 21:47:18 GMT 2021","Fri Jul 30 21:47:18 GMT 2021","162","","loginpage.LoginPageTest","","loginpage.LoginPageTest","ZeroLogIn","ZeroLogIn()",""
+"broken","Fri Jul 30 21:47:18 GMT 2021","Fri Jul 30 21:47:19 GMT 2021","163","","createAccountPage.createAccountPageTest","","createAccountPage.createAccountPageTest","CreateAccountCheck","CreateAccountCheck()",""
+"broken","Fri Jul 30 21:47:17 GMT 2021","Fri Jul 30 21:47:17 GMT 2021","806","","loginpage.LoginPageTest","","loginpage.LoginPageTest","loginCheck","loginCheck()",""
+"broken","Fri Jul 30 21:47:18 GMT 2021","Fri Jul 30 21:47:18 GMT 2021","203","","homepage.HomePageTest","","homepage.HomePageTest","pageCheckLogin","pageCheckLogin()",""
