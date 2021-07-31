@@ -24,7 +24,7 @@ public class BaseTest {
     protected String passFalse2 = " ";
     protected String email = "zalog39@freemail.hu ";
 
-    String URL = "https://en.wikipedia.org/wiki/Main_Page";
+    protected String URL = "https://en.wikipedia.org/wiki/Main_Page";
 
     public WebDriver getDriver() {
         return driver;
@@ -48,15 +48,16 @@ public class BaseTest {
         driver.quit();
     }
 
-    @Test
+
     public void ValidLogin(){
         loginPage=new LoginPage(driver);
         homePage.clickLoginButton();
         loginPage.typeUserName(user);
         loginPage.typePassword(pass);
         loginPage.clickLoginButton();
-
     }
 
 }
+
+
 

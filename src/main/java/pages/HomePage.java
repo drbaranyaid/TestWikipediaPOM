@@ -10,7 +10,7 @@ import java.util.List;
 public class HomePage {
     private WebDriver driver;
     String URL = "https://en.wikipedia.org/wiki/Main_Page";
-    private final By loginButton = By.xpath("//*[@id=\"pt-login\"]/a");
+    public final By loginButton = By.xpath("//*[@id=\"pt-login\"]/a");
     private final By createAccountButton = By.xpath("//*[@id=\"pt-createaccount\"]/a");
     private final By privacyPolicyButton = By.xpath("//*[@id='footer-places-privacy']/a");
     private final By SearchInputField = By.xpath("//*[@id='searchInput']");
@@ -48,7 +48,11 @@ public class HomePage {
         return new SearchResultPage(driver);
     }
 
-
+    public SearchResultPage searchDataGreenTea() {
+        driver.findElement(SearchInputField).sendKeys("Green tea");
+        driver.findElement(SearchButton).click();
+        return new SearchResultPage(driver);
+    }
     }
 
 

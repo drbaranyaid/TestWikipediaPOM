@@ -22,15 +22,17 @@ public class LoginPage {
     }
 
     public void typeUserName(String user){
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        //driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.findElement(userName).sendKeys(user);
     }
     public void typePassword(String pass){
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        //driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.findElement(passwordButton).sendKeys(pass);
     }
     public FirstPage clickLoginButton(){
         driver.findElement(loginFinalButton).click();
         return new FirstPage(driver);
     }
+
+
 }
