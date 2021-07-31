@@ -3,16 +3,19 @@ package base;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import pages.HomePage;
+import pages.LoginPage;
 
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
     protected WebDriver driver;
     protected HomePage homePage;
+    protected LoginPage loginPage;
     protected String user = "KisVirág9";
     protected String pass = "kukac423";
     protected String userFalse="GezaNagy";
@@ -43,6 +46,16 @@ public class BaseTest {
     @AfterEach
     public void tearDown() {
         driver.quit();
+    }
+
+    @Test
+    public void ValidLogin(){
+        loginPage=new LoginPage(driver);
+        homePage.clickLoginButton();
+        loginPage.typeUserName(user);
+        loginPage.typePassword(pass);
+        loginPage.clickLoginButton();
+
     }
 
 }

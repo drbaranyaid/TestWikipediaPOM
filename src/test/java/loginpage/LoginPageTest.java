@@ -12,6 +12,7 @@ import pages.LoginPage;
 public class LoginPageTest extends BaseTest {
     private LoginPage loginPage;
     public final By errorbox = By.xpath("//*[@id=\"userloginForm\"]/form/div[1]");
+
     @Test
     public void loginCheck() {
         homePage.clickLoginButton();
