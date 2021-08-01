@@ -5,11 +5,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
-
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 public class HomePageTest extends BaseTest {
 
@@ -41,7 +36,6 @@ public class HomePageTest extends BaseTest {
     public void SearchDataLink() {
         homePage.searchData();
         Assertions.assertEquals("https://en.wikipedia.org/w/index.php?search=font+types&title=Special%3ASearch&go=Go&ns0=1", driver.getCurrentUrl());
-        List<WebElement> links;
         }
     }
 

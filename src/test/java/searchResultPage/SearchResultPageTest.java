@@ -1,4 +1,5 @@
 package searchResultPage;
+
 import org.openqa.selenium.WebElement;
 import pages.SearchResultPage;
 import base.BaseTest;

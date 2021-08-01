@@ -1,14 +1,9 @@
 package pages;
 
-import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Utils;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -20,7 +15,6 @@ public class SandBoxPage {
     public SandBoxPage(WebDriver driver) {
         this.driver = driver;
     }
-    public final By ShowPreviewButton = By.xpath("//*[@id=\"wpPreview\"]");
 
 
     public void textFieldClear(){

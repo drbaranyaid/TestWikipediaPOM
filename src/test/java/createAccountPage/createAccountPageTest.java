@@ -4,15 +4,13 @@ import base.BaseTest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import pages.CreateAccountPage;
-import pages.HomePage;
-import pages.LoginPage;
+
 
 public class createAccountPageTest extends BaseTest {
-    private CreateAccountPage createAccountPage;
 
     @Test
     public void CreateAccountCheck() {
-        createAccountPage = new CreateAccountPage(driver);
+        CreateAccountPage createAccountPage = new CreateAccountPage(driver);
         homePage.clickCreateAccountButton();
         createAccountPage.typeUserNameToCreateAccount(user);
         createAccountPage.typePasswordToCreateAccount(pass);
