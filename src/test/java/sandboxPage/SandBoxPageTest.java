@@ -20,6 +20,8 @@ public class SandBoxPageTest extends BaseTest {
     public void repeatedData(){
         ValidLogin();
         FirstPage firstPage = new FirstPage(driver);
+        Utils utils = new Utils(driver);
+        utils.setWait("//*[@id=\"pt-sandbox\"]/a");
         firstPage.clickSandBoxButton();
         SandBoxPage sandboxPage = new SandBoxPage(driver);
         sandboxPage.textFieldClear();
@@ -33,6 +35,8 @@ public class SandBoxPageTest extends BaseTest {
         loginPage = new LoginPage(driver);
         ValidLogin();
         firstPage = new FirstPage(driver);
+        Utils utils = new Utils(driver);
+        utils.setWait("//*[@id=\"pt-sandbox\"]/a");
         firstPage.clickSandBoxButton();
         SandBoxPage sandboxPage = new SandBoxPage(driver);
         sandboxPage.textFieldSendData("I am an old data, you need to change me!");
