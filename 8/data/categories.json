@@ -1,0 +1,103 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=\"pt-sandbox\"]/a (tried for 10 second(s) with 500 milliseconds interval)",
+      "children" : [ {
+        "name" : "repeatedData()",
+        "uid" : "77a9372297d48180",
+        "parentUid" : "53ba58433bd92731fbef9dabdce7ebbc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627934996826,
+          "stop" : 1627935018087,
+          "duration" : 21261
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "NewData()",
+        "uid" : "dffdf39f1024a716",
+        "parentUid" : "53ba58433bd92731fbef9dabdce7ebbc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627935018102,
+          "stop" : 1627935039357,
+          "duration" : 21255
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "InputData()",
+        "uid" : "5d0bced8daae9354",
+        "parentUid" : "53ba58433bd92731fbef9dabdce7ebbc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627935039361,
+          "stop" : 1627935060643,
+          "duration" : 21282
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "ClearData()",
+        "uid" : "f5810a2ed164ddbc",
+        "parentUid" : "53ba58433bd92731fbef9dabdce7ebbc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627935060646,
+          "stop" : 1627935081933,
+          "duration" : 21287
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "53ba58433bd92731fbef9dabdce7ebbc"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id='wpName2']\"}\n  (Session info: headless chrome=92.0.4515.107)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az82-711', ip: '10.1.0.252', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '16.0.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.7BNniT}, goog:chromeOptions: {debuggerAddress: localhost:44185}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 254bf9d79b9f2dc579d6d7fa0c12be02\n*** Element info: {Using=xpath, value=//*[@id='wpName2']}",
+      "children" : [ {
+        "name" : "CreateAccountCheck()",
+        "uid" : "b1a0582917ec7aa9",
+        "parentUid" : "dc6f30a3911aba0fbcd966e64c020e07",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627935183211,
+          "stop" : 1627935194361,
+          "duration" : 11150
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "dc6f30a3911aba0fbcd966e64c020e07"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected: <true> but was: <false>",
+      "children" : [ {
+        "name" : "SaveToFile()",
+        "uid" : "e982f92f0e9f2dc4",
+        "parentUid" : "845845d2ca1b5f839f479796c2627505",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627935194374,
+          "stop" : 1627935198744,
+          "duration" : 4370
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "845845d2ca1b5f839f479796c2627505"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
