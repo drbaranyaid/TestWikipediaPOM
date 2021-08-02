@@ -12,7 +12,7 @@ import java.util.List;
 public class SearchResultPageTest extends BaseTest {
     @Test
     public void SearchMorePagesListCheck() {
-        SearchResultPage searchResultPage=new SearchResultPage(driver);
+        SearchResultPage searchResultPage = new SearchResultPage(driver);
         homePage.searchData();
         searchResultPage.searchThroughMorePages();
         Assertions.assertEquals("Font types", driver.findElement(By.xpath("//*[@id=\"mw-content-text\"]/div[3]/p[1]/i/a[1]")).getText());

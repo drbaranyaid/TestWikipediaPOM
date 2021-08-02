@@ -51,7 +51,8 @@ public class FirstPage {
             e.printStackTrace();
         }
         System.out.println(data);
-        Assertions.assertTrue(data.toString().contains("Road"));
+        Assertions.assertTrue(data.toString().contains("Nominate an article"));
+        //Assertions.assertTrue(driver.findElement(By.xpath("//*[@id=\"mp-itn\"]")).getText().contains(data.toString()))
     }
 
 
