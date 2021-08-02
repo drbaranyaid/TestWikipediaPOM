@@ -17,7 +17,7 @@ public class FirstPageTest extends BaseTest {
     @Test
     public void LogoutTest() {
         loginPage = new LoginPage(driver);
-        ValidLogin();
+        loginPage.ValidLogin();
         firstPage = new FirstPage(driver);
         firstPage.clickLogoutButton();
         homePage = new HomePage(driver);
@@ -27,7 +27,7 @@ public class FirstPageTest extends BaseTest {
     @Test
     public void SaveToFile() {
         loginPage = new LoginPage(driver);
-        ValidLogin();
+        loginPage.ValidLogin();
         firstPage = new FirstPage(driver);
         firstPage.writeToAFile();
     }

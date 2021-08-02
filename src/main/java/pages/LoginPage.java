@@ -28,6 +28,15 @@ public class LoginPage {
         driver.findElement(loginFinalButton).click();
         new FirstPage(driver);
     }
+    public void ValidLogin(){
+        String user = "KisVirág9";
+        String pass = "kukac423";
+        HomePage homePage = new HomePage(driver);
+        homePage.clickLoginButton();
+        typeUserName(user);
+        typePassword(pass);
+        clickLoginButton();
 
+    }
 
 }
