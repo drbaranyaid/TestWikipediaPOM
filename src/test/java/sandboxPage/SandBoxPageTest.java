@@ -30,10 +30,10 @@ public class SandBoxPageTest extends BaseTest {
         loginPage.typeUserName(user);
         loginPage.typePassword(pass);
         loginPage.clickLoginButton();
-        TakeScreenshot();
         FirstPage firstPage = new FirstPage(driver);
         Utils utils = new Utils(driver);
         utils.setWait(sandBox);
+        TakeScreenshot();
         firstPage.clickSandBoxButton();
         SandBoxPage sandboxPage = new SandBoxPage(driver);
         sandboxPage.textFieldClear();
