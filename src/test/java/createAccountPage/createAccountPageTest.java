@@ -22,15 +22,15 @@ public class createAccountPageTest extends BaseTest {
         createAccountPage.typeUserNameToCreateAccount(user);
         createAccountPage.typePasswordToCreateAccount(pass);
         createAccountPage.typeEmailToCreateAccount(email);
-        //TakeScreenshot2();
+        TakeScreenshot2();
         createAccountPage.clickCreateAccountButton();
-        //TakeScreenshot2();
+        TakeScreenshot2();
         Assertions.assertEquals("https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Main+Page", getDriver().getCurrentUrl());
     }
-   /* @Step("TakeScreenshot2")
+    @Step("TakeScreenshot2")
     public void TakeScreenshot2(){
         Allure.addAttachment("Screenshot", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         System.out.println(driver.getCurrentUrl());
-    }*/
+    }
 
 }
