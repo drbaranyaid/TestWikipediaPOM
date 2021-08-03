@@ -2,6 +2,7 @@ package createAccountPage;
 
 import base.BaseTest;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import pages.CreateAccountPage;
 
@@ -9,6 +10,7 @@ import pages.CreateAccountPage;
 public class createAccountPageTest extends BaseTest {
 
     @Test
+    @Disabled
     public void CreateAccountCheck() {
         CreateAccountPage createAccountPage = new CreateAccountPage(driver);
         homePage.clickCreateAccountButton();

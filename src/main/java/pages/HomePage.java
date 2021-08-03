@@ -42,6 +42,7 @@ public class HomePage {
         driver.findElement(SearchButton).click();
         new SearchResultPage(driver);
     }
+
     }
 
 
