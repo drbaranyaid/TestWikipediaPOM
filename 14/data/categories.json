@@ -1,0 +1,43 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"wpTextbox1\"]\"}\n  (Session info: headless chrome=92.0.4515.107)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az47-334', ip: '10.1.0.47', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '16.0.2'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.pcm20Z}, goog:chromeOptions: {debuggerAddress: localhost:37913}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 2ec77bf423d500ed15e2fda6568b5dac\n*** Element info: {Using=xpath, value=//*[@id=\"wpTextbox1\"]}",
+      "children" : [ {
+        "name" : "repeatedData()",
+        "uid" : "a6b65d946ae9393f",
+        "parentUid" : "dbdc7398a2cc63548a3b7fcb4657ca27",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628011855032,
+          "stop" : 1628011882047,
+          "duration" : 27015
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "dbdc7398a2cc63548a3b7fcb4657ca27"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"wpTextbox1\"]\"}\n  (Session info: headless chrome=92.0.4515.107)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az47-334', ip: '10.1.0.47', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '16.0.2'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.PLwV1c}, goog:chromeOptions: {debuggerAddress: localhost:44451}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b37044f0372b5582ae6044ae075a350f\n*** Element info: {Using=xpath, value=//*[@id=\"wpTextbox1\"]}",
+      "children" : [ {
+        "name" : "InputClearModifyData()",
+        "uid" : "18393c01b2073f26",
+        "parentUid" : "e2128f23c3da0a5ccc6985f277ac84ec",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628011882083,
+          "stop" : 1628011907101,
+          "duration" : 25018
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e2128f23c3da0a5ccc6985f277ac84ec"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
