@@ -1,0 +1,39 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='pt-sandbox']/a (tried for 10 second(s) with 500 milliseconds interval)",
+      "children" : [ {
+        "name" : "repeatedData()",
+        "uid" : "d91fb5874a4f6980",
+        "parentUid" : "a03127c9b7b5a6e54500200179687de0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628020618396,
+          "stop" : 1628020639729,
+          "duration" : 21333
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "InputClearModifyData()",
+        "uid" : "c449d8662a14053c",
+        "parentUid" : "a03127c9b7b5a6e54500200179687de0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628020639736,
+          "stop" : 1628020660967,
+          "duration" : 21231
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a03127c9b7b5a6e54500200179687de0"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
