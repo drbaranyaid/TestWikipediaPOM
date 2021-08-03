@@ -1,6 +1,5 @@
 package searchResultPage;
 
-import org.junit.jupiter.api.Disabled;
 import org.openqa.selenium.WebElement;
 import pages.HomePage;
 import pages.SearchResultPage;
@@ -10,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
 import java.util.List;
-@Disabled
+
 public class SearchResultPageTest extends BaseTest {
     @Test
     public void SearchMorePagesListCheck() {

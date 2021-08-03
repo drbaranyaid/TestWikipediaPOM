@@ -12,7 +12,7 @@ import utils.Utils;
 
 import java.io.ByteArrayInputStream;
 
-//@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+
 public class SandBoxPageTest extends BaseTest {
 
     FirstPage firstPage;
@@ -23,7 +23,6 @@ public class SandBoxPageTest extends BaseTest {
     public final By preview = By.xpath("//*[@id='wpPreview']");
 
     @Test
-    //@Order(4)
     public void repeatedData() {
         homePage.clickLoginButton();
         loginPage = new LoginPage(driver);
@@ -84,45 +83,12 @@ public class SandBoxPageTest extends BaseTest {
         utils.setWait(preview);
         Assertions.assertTrue(driver.findElement(textfield).getText().contains("I am the new data!"));
     }
-    /*@Test
-    public void InputClearModifyINSEARCH() {
-        homePage.clickLoginButton();
-        loginPage = new LoginPage(driver);
-        loginPage.typeUserName(user);
-        loginPage.typePassword(pass);
-        loginPage.clickLoginButton();
-        firstPage = new FirstPage(driver);
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,250)", "");
-        Utils utils = new Utils(driver);
-        utils.setWait(sandBox);
-        firstPage.clickSandBoxButton();
-        SandBoxPage sandboxPage = new SandBoxPage(driver);
-        sandboxPage.textFieldSendData("I am an old data, you need to change me!");
-        utils = new Utils(driver);
-        Utils.scrollDown(driver);
-        utils.setWait(preview);
-        SandBoxPage sandboxPage2 = new SandBoxPage(driver);
-        sandboxPage2.clickShowPreviewButton();
-        utils.setWait(preview);
-        Assertions.assertTrue(driver.findElement(textfield).getText().contains("I am an old data, you need to change me!"));
-        sandboxPage.textFieldClick();
-        sandboxPage.textFieldClear();
-        sandboxPage.clickShowPreviewButton();
-        utils.setWait(preview);
-        Assertions.assertFalse(driver.findElement(textfield).getText().contains("I am an old data"));
-        sandboxPage.textFieldClick();
-        sandboxPage.textFieldSendData("I am the new data!");
-        utils = new Utils(driver);
-        Utils.scrollDown(driver);
-        utils.setWait(preview);
-        sandboxPage.clickShowPreviewButton();
-        utils.setWait(preview);
-        Assertions.assertTrue(driver.findElement(textfield).getText().contains("I am the new data!"));
-    }*/
+
 }
 
-    /*@Test
+    /*
+    //@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+    @Test
     //@Order(1)
     public void InputData() {
         loginPage = new LoginPage(driver);

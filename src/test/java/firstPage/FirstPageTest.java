@@ -2,7 +2,6 @@ package firstPage;
 
 import base.BaseTest;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import pages.FirstPage;
 import pages.HomePage;
@@ -16,7 +15,6 @@ public class FirstPageTest extends BaseTest {
     LoginPage loginPage;
 
     @Test
-    @Disabled
     public void LogoutTest() {
         loginPage = new LoginPage(driver);
         loginPage.ValidLogin();
@@ -27,7 +25,6 @@ public class FirstPageTest extends BaseTest {
     }
 
     @Test
-    @Disabled
     public void SaveToFile() {
         loginPage = new LoginPage(driver);
         loginPage.ValidLogin();

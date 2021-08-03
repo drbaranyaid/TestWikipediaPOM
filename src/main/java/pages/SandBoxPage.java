@@ -20,25 +20,18 @@ public class SandBoxPage {
 
 
     public void textFieldClear() {
-        /*WebElement textfield = driver.findElement(By.xpath("//*[@id=\"wpTextbox1\"]"));
-        textfield.clear();*/
         driver.findElement(textfield).clear();
     }
 
     public void textFieldSendData(String text) {
-        /*WebElement textfield = driver.findElement(By.xpath("//*[@id=\"wpTextbox1\"]"));
-        textfield.sendKeys(text);*/
         driver.findElement(textfield).sendKeys(text);
     }
 
     public void clickShowPreviewButton() {
         driver.findElement(preview).click();
-        //driver.findElement(By.xpath("//*[@id=\"wpPreview\"]")).click();
     }
 
     public void textFieldClick() {
-        /*WebElement textfield = driver.findElement(By.xpath("//*[@id=\"wpTextbox1\"]"));
-        textfield.click();*/
         driver.findElement(textfield).click();
     }
 

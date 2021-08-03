@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-@Disabled
+
 public class HomePageTest extends BaseTest {
 
     @Test
@@ -21,7 +21,6 @@ public class HomePageTest extends BaseTest {
     }
     @Test
     public void PrivacyPolicyUse() {
-        //Privacy Policy is accepted automatically when signing in.
         homePage.clickPrivacyPolicyButton();
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0, 5000)");
