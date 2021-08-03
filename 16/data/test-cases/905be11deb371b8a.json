@@ -1,0 +1,203 @@
+{
+  "uid" : "905be11deb371b8a",
+  "name" : "ZeroLogIn()",
+  "fullName" : "loginpage.LoginPageTest.ZeroLogIn",
+  "historyId" : "f379e412cb420e00abbb542977028c85",
+  "time" : {
+    "start" : 1628012662322,
+    "stop" : 1628012662322,
+    "duration" : 0
+  },
+  "description" : "",
+  "status" : "skipped",
+  "statusMessage" : "class loginpage.LoginPageTest is @Disabled",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az82-711"
+  }, {
+    "name" : "thread",
+    "value" : "3384@fv-az82-711.ForkJoinPool-1-worker-3(16)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "loginpage.LoginPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "loginpage.LoginPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "ZeroLogIn"
+  }, {
+    "name" : "suite",
+    "value" : "loginpage.LoginPageTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 5,
+        "skipped" : 4,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 15
+      },
+      "items" : [ {
+        "uid" : "b25e7e6228140d56",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/15//#testresult/b25e7e6228140d56",
+        "status" : "skipped",
+        "statusDetails" : "class loginpage.LoginPageTest is @Disabled",
+        "time" : {
+          "start" : 1628012156348,
+          "stop" : 1628012156348,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "3d308839a970947d",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/14//#testresult/3d308839a970947d",
+        "status" : "skipped",
+        "statusDetails" : "class loginpage.LoginPageTest is @Disabled",
+        "time" : {
+          "start" : 1628011854953,
+          "stop" : 1628011854953,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "520551afb1abbab9",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/13//#testresult/520551afb1abbab9",
+        "status" : "skipped",
+        "statusDetails" : "class loginpage.LoginPageTest is @Disabled",
+        "time" : {
+          "start" : 1628011446151,
+          "stop" : 1628011446151,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "85ee49986d76e48e",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/12//#testresult/85ee49986d76e48e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628004010311,
+          "stop" : 1628004011649,
+          "duration" : 1338
+        }
+      }, {
+        "uid" : "5a6369b605cc12ef",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/11//#testresult/5a6369b605cc12ef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628001865669,
+          "stop" : 1628001867193,
+          "duration" : 1524
+        }
+      }, {
+        "uid" : "c1733c47a3423333",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/10//#testresult/c1733c47a3423333",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627938702323,
+          "stop" : 1627938703682,
+          "duration" : 1359
+        }
+      }, {
+        "uid" : "1a2efcfe43eb03a2",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/9//#testresult/1a2efcfe43eb03a2",
+        "status" : "broken",
+        "statusDetails" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az82-711', ip: '10.1.0.31', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '16.0.1'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: #0 0x55f8a0c91a63 <unknown>\n#1 0x55f8a0a06458 <unknown>\n#2 0x55f8a0a292e3 <unknown>\n#3 0x55f8a0a24e9f <unknown>\n#4 0x55f8a0a5eb72 <unknown>\n#5 0x55f8a0a58fd3 <unknown>\n#6 0x55f8a0a2f514 <unknown>\n#7 0x55f8a0a30505 <unknown>\n#8 0x55f8a0cbde2e <unknown>\n#9 0x55f8a0cd3886 <unknown>\n#10 0x55f8a0cbed75 <unknown>\n#11 0x55f8a0cd4d94 <unknown>\n#12 0x55f8a0cb58eb <unknown>\n#13 0x55f8a0cefcd8 <unknown>\n#14 0x55f8a0cefe58 <unknown>\n#15 0x55f8a0d09dfd <unknown>\n#16 0x7f895371e609 start_thread\n",
+        "time" : {
+          "start" : 1627938254463,
+          "stop" : 1627938254646,
+          "duration" : 183
+        }
+      }, {
+        "uid" : "79802f1646f972fe",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/8//#testresult/79802f1646f972fe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627934988853,
+          "stop" : 1627934990298,
+          "duration" : 1445
+        }
+      }, {
+        "uid" : "5dd6c574bdf73c53",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/7//#testresult/5dd6c574bdf73c53",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627835791389,
+          "stop" : 1627835792800,
+          "duration" : 1411
+        }
+      }, {
+        "uid" : "1384fd96d6ec89f3",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/6//#testresult/1384fd96d6ec89f3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627825033698,
+          "stop" : 1627825035275,
+          "duration" : 1577
+        }
+      }, {
+        "uid" : "fbd2014de5ad0cd5",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/5//#testresult/fbd2014de5ad0cd5",
+        "status" : "broken",
+        "statusDetails" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az47-334', ip: '10.1.0.9', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '16.0.1'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: #0 0x55dbe7de5a63 <unknown>\n#1 0x55dbe7b5a458 <unknown>\n#2 0x55dbe7b7d2e3 <unknown>\n#3 0x55dbe7b78e9f <unknown>\n#4 0x55dbe7bb2b72 <unknown>\n#5 0x55dbe7bacfd3 <unknown>\n#6 0x55dbe7b83514 <unknown>\n#7 0x55dbe7b84505 <unknown>\n#8 0x55dbe7e11e2e <unknown>\n#9 0x55dbe7e27886 <unknown>\n#10 0x55dbe7e12d75 <unknown>\n#11 0x55dbe7e28d94 <unknown>\n#12 0x55dbe7e098eb <unknown>\n#13 0x55dbe7e43cd8 <unknown>\n#14 0x55dbe7e43e58 <unknown>\n#15 0x55dbe7e5ddfd <unknown>\n#16 0x7f07bf784609 start_thread\n",
+        "time" : {
+          "start" : 1627822727115,
+          "stop" : 1627822727303,
+          "duration" : 188
+        }
+      }, {
+        "uid" : "f5e14cb75f5b006",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/4//#testresult/f5e14cb75f5b006",
+        "status" : "broken",
+        "statusDetails" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az83-150', ip: '10.1.0.93', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '16.0.1'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: #0 0x557994d22a63 <unknown>\n#1 0x557994a97458 <unknown>\n#2 0x557994aba2e3 <unknown>\n#3 0x557994ab5e9f <unknown>\n#4 0x557994aefb72 <unknown>\n#5 0x557994ae9fd3 <unknown>\n#6 0x557994ac0514 <unknown>\n#7 0x557994ac1505 <unknown>\n#8 0x557994d4ee2e <unknown>\n#9 0x557994d64886 <unknown>\n#10 0x557994d4fd75 <unknown>\n#11 0x557994d65d94 <unknown>\n#12 0x557994d468eb <unknown>\n#13 0x557994d80cd8 <unknown>\n#14 0x557994d80e58 <unknown>\n#15 0x557994d9adfd <unknown>\n#16 0x7fe46106e609 start_thread\n",
+        "time" : {
+          "start" : 1627752821527,
+          "stop" : 1627752821694,
+          "duration" : 167
+        }
+      }, {
+        "uid" : "8a1f1728b776ee65",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/3//#testresult/8a1f1728b776ee65",
+        "status" : "broken",
+        "statusDetails" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az39-997', ip: '10.1.0.100', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '16.0.1'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: #0 0x55f560b3fa63 <unknown>\n#1 0x55f5608b4458 <unknown>\n#2 0x55f5608d72e3 <unknown>\n#3 0x55f5608d2e9f <unknown>\n#4 0x55f56090cb72 <unknown>\n#5 0x55f560906fd3 <unknown>\n#6 0x55f5608dd514 <unknown>\n#7 0x55f5608de505 <unknown>\n#8 0x55f560b6be2e <unknown>\n#9 0x55f560b81886 <unknown>\n#10 0x55f560b6cd75 <unknown>\n#11 0x55f560b82d94 <unknown>\n#12 0x55f560b638eb <unknown>\n#13 0x55f560b9dcd8 <unknown>\n#14 0x55f560b9de58 <unknown>\n#15 0x55f560bb7dfd <unknown>\n#16 0x7f37985bd609 start_thread\n",
+        "time" : {
+          "start" : 1627727230639,
+          "stop" : 1627727230825,
+          "duration" : 186
+        }
+      }, {
+        "uid" : "6bcb2ee84fa9525a",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/2//#testresult/6bcb2ee84fa9525a",
+        "status" : "broken",
+        "statusDetails" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az83-150', ip: '10.1.0.22', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '16.0.1'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: #0 0x55aeaa554a63 <unknown>\n#1 0x55aeaa2c9458 <unknown>\n#2 0x55aeaa2ec2e3 <unknown>\n#3 0x55aeaa2e7e9f <unknown>\n#4 0x55aeaa321b72 <unknown>\n#5 0x55aeaa31bfd3 <unknown>\n#6 0x55aeaa2f2514 <unknown>\n#7 0x55aeaa2f3505 <unknown>\n#8 0x55aeaa580e2e <unknown>\n#9 0x55aeaa596886 <unknown>\n#10 0x55aeaa581d75 <unknown>\n#11 0x55aeaa597d94 <unknown>\n#12 0x55aeaa5788eb <unknown>\n#13 0x55aeaa5b2cd8 <unknown>\n#14 0x55aeaa5b2e58 <unknown>\n#15 0x55aeaa5ccdfd <unknown>\n#16 0x7f64d9d67609 start_thread\n",
+        "time" : {
+          "start" : 1627681638265,
+          "stop" : 1627681638427,
+          "duration" : 162
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "905be11deb371b8a.json",
+  "parameterValues" : [ ]
+}
