@@ -59,6 +59,8 @@ public class SandBoxPageTest extends BaseTest {
         Utils utils = new Utils(driver);
         utils.setWait(sandBox);
         firstPage.clickSandBoxButton();
+        driver.findElement(By.xpath( "//*[@id='noarticletext']/tbody/tr/td/ul/li[1]/b/a")).click();
+        TakeScreenshot();
         SandBoxPage sandboxPage = new SandBoxPage(driver);
         sandboxPage.textFieldSendData("I am an old data, you need to change me!");
         utils = new Utils(driver);
