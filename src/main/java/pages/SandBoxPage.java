@@ -2,7 +2,6 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import utils.Utils;
 
 import java.io.File;
@@ -13,6 +12,7 @@ public class SandBoxPage {
 
     public WebDriver driver;
     public final By textfield = By.xpath("//*[@id=\"wpTextbox1\"]");
+    public final By preview = By.xpath("//*[@id=\"wpPreview\"]");
 
     public SandBoxPage(WebDriver driver) {
         this.driver = driver;
@@ -20,22 +20,26 @@ public class SandBoxPage {
 
 
     public void textFieldClear() {
-        WebElement textfield = driver.findElement(By.xpath("//*[@id=\"wpTextbox1\"]"));
-        textfield.clear();
+        /*WebElement textfield = driver.findElement(By.xpath("//*[@id=\"wpTextbox1\"]"));
+        textfield.clear();*/
+        driver.findElement(textfield).clear();
     }
 
     public void textFieldSendData(String text) {
-        WebElement textfield = driver.findElement(By.xpath("//*[@id=\"wpTextbox1\"]"));
-        textfield.sendKeys(text);
+        /*WebElement textfield = driver.findElement(By.xpath("//*[@id=\"wpTextbox1\"]"));
+        textfield.sendKeys(text);*/
+        driver.findElement(textfield).sendKeys(text);
     }
 
     public void clickShowPreviewButton() {
-        driver.findElement(By.xpath("//*[@id=\"wpPreview\"]")).click();
+        driver.findElement(preview).click();
+        //driver.findElement(By.xpath("//*[@id=\"wpPreview\"]")).click();
     }
 
     public void textFieldClick() {
-        WebElement textfield = driver.findElement(By.xpath("//*[@id=\"wpTextbox1\"]"));
-        textfield.click();
+        /*WebElement textfield = driver.findElement(By.xpath("//*[@id=\"wpTextbox1\"]"));
+        textfield.click();*/
+        driver.findElement(textfield).click();
     }
 
     public void repeatedMultiInput() {
@@ -60,9 +64,9 @@ public class SandBoxPage {
         }
 
         Utils utils = new Utils(driver);
-        utils.setWait("//*[@id=\"wpPreview\"]");
+        utils.setWait(preview);
         clickShowPreviewButton();
-        utils.setWait("//*[@id=\"wpTextbox1\"]");
+        utils.setWait(textfield);
 
 
     }

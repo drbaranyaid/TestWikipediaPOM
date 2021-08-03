@@ -16,7 +16,6 @@ public class createAccountPageTest extends BaseTest {
         createAccountPage.typePasswordToCreateAccount(pass);
         createAccountPage.typeEmailToCreateAccount(email);
         createAccountPage.clickCreateAccountButton();
-        //keresd meg a pop-up windowt!
         Assertions.assertEquals("https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Main+Page", getDriver().getCurrentUrl());
     }
 }

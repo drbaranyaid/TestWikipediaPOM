@@ -1,6 +1,7 @@
 package searchResultPage;
 
 import org.openqa.selenium.WebElement;
+import pages.HomePage;
 import pages.SearchResultPage;
 import base.BaseTest;
 import org.junit.jupiter.api.Assertions;
@@ -42,4 +43,25 @@ public class SearchResultPageTest extends BaseTest {
         Assertions.assertTrue(isTestDataList);
     }
 
+    @Test
+    public void SearchPagesTest() {
+        HomePage homePage = new HomePage(driver);
+        homePage.searchData();
+        SearchResultPage searchResultPage = new SearchResultPage(driver);
+        searchResultPage.SearchPages();
+        Assertions.assertEquals("Font types", driver.findElement(By.xpath("//*[@id=\"mw-content-text\"]/div[3]/p[1]/i/a[1]")).getText());
+        Assertions.assertEquals("next 20", driver.findElement(By.xpath("//*[@id=\"mw-content-text\"]/div[3]/p[2]/a[2]")).getText());
+    }
+    @Test
+    public void SearchPagesTest2() {
+        HomePage homePage = new HomePage(driver);
+        homePage.searchData();
+        SearchResultPage searchResultPage = new SearchResultPage(driver);
+        searchResultPage.SearchPages2();
+        Assertions.assertEquals("Font types", driver.findElement(By.xpath("//*[@id=\"mw-content-text\"]/div[3]/p[1]/i/a[1]")).getText());
+        Assertions.assertEquals("next 20", driver.findElement(By.xpath("//*[@id=\"mw-content-text\"]/div[3]/p[2]/a[2]")).getText());
+        // hány count van assertben, másik függvényben kiszedem a tartalmat benne van-e az elem
+    }
+
 }
+

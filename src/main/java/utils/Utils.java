@@ -18,9 +18,9 @@ public class Utils {
         js.executeScript("window.scrollBy(0, 500)");
     }
 
-    public void setWait(String path) {
+    public void setWait(By WebE) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(path)));
+        wait.until(ExpectedConditions.visibilityOfElementLocated((By) WebE));
     }
 
 }

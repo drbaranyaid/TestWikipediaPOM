@@ -3,7 +3,10 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Utils;
+
 import java.util.List;
 
 public class SearchResultPage {
@@ -15,11 +18,12 @@ public class SearchResultPage {
     }
 
     private final By Next20 = By.xpath("//*[@id='mw-content-text']/div[3]/p[2]/a[1]");
+    List<WebElement> div;
     List<WebElement> links;
 
     public void searchThroughMorePages() {
         for (int i = 1; i <= 2; i++) {
-            links = driver.findElements(By.xpath("//*[@id='mw-content-text']/div[3]/ul/li"));
+            links = driver.findElements(By.xpath("//*[@id='mw-content-text']/div[3]"));
             for (WebElement webElement : links) {
                 WebElement link = webElement.findElement(By.xpath(".//a"));
                 System.out.println(link.getText());
@@ -36,4 +40,51 @@ public class SearchResultPage {
             }
         }
     }
+
+    public void SearchPages() {
+        div = driver.findElements(By.xpath("//*[@id='mw-content-text']/div[3]/ul/li"));
+        for (WebElement webElement : div) {
+            WebElement link = webElement.findElement(By.xpath(".//a"));
+            System.out.println(link.getText());
+        }
+        Utils.scrollDown(driver);
+        driver.findElement(Next20).click();
+        div = driver.findElements(By.xpath("//*[@id='mw-content-text']/div[3]/ul/li"));
+        for (WebElement webElement : div) {
+            WebElement link = webElement.findElement(By.xpath(".//a"));
+            System.out.println(link.getText());
+        }
+    }
+
+    public int SearchPages2() {
+        int count = 0;
+        while (true) {
+            div = driver.findElements(By.xpath("//*[@id='mw-content-text']/div[3]/ul/li"));
+            for (WebElement webElement : div) {
+                WebElement link = webElement.findElement(By.xpath(".//a"));
+                System.out.println(link.getText());
+            }
+            Utils.scrollDown(driver);
+            if (isClickable(Next20) && count<=2) {
+                driver.findElement(Next20).click();
+                count++;
+            } else {
+                break;
+            }
+        }
+        return count;
+    }
+
+
+    public boolean isClickable(By webE) {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, 5);
+            wait.until(ExpectedConditions.elementToBeClickable(webE));
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
 }
+
+
