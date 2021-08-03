@@ -12,7 +12,7 @@ import pages.CreateAccountPage;
 
 import java.io.ByteArrayInputStream;
 
-@Disabled
+
 public class createAccountPageTest extends BaseTest {
 
     @Test
