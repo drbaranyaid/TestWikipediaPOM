@@ -14,15 +14,18 @@ public class SandBoxPageTest extends BaseTest {
     FirstPage firstPage;
     LoginPage loginPage;
 
-    public final By sandBox = By.xpath("//*[@id=\"pt-sandbox\"]/a");
-    public final By textfield = By.xpath("//*[@id=\"wpTextbox1\"]");
-    public final By preview = By.xpath("//*[@id=\"wpPreview\"]");
+    public final By sandBox = By.xpath("//*[@id='pt-sandbox']/a");
+    public final By textfield = By.xpath("//*[@id='wpTextbox1']");
+    public final By preview = By.xpath("//*[@id='wpPreview']");
 
     @Test
     //@Order(4)
     public void repeatedData() {
+        homePage.clickLoginButton();
         loginPage = new LoginPage(driver);
-        loginPage.ValidLogin();
+        loginPage.typeUserName(user);
+        loginPage.typePassword(pass);
+        loginPage.clickLoginButton();
         FirstPage firstPage = new FirstPage(driver);
         Utils utils = new Utils(driver);
         utils.setWait(sandBox);
@@ -36,8 +39,11 @@ public class SandBoxPageTest extends BaseTest {
 
     @Test
     public void InputClearModifyData() {
+        homePage.clickLoginButton();
         loginPage = new LoginPage(driver);
-        loginPage.ValidLogin();
+        loginPage.typeUserName(user);
+        loginPage.typePassword(pass);
+        loginPage.clickLoginButton();
         firstPage = new FirstPage(driver);
         Utils utils = new Utils(driver);
         utils.setWait(sandBox);
