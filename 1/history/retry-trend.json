@@ -1,9 +1,0 @@
-[ {
-  "buildOrder" : 1,
-  "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/1/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "run" : 3,
-    "retry" : 0
-  }
-} ]
