@@ -29,6 +29,7 @@ public class  SandBoxPageTest extends BaseTest {
         loginPage.typeUserName(user);
         loginPage.typePassword(pass);
         loginPage.clickLoginButton();
+        TakeScreenshot();
         FirstPage firstPage = new FirstPage(driver);
         Utils utils = new Utils(driver);
         utils.setWait(sandBox);
@@ -55,6 +56,7 @@ public class  SandBoxPageTest extends BaseTest {
         loginPage.typePassword(pass);
         loginPage.clickLoginButton();
         firstPage = new FirstPage(driver);
+        TakeScreenshot();
         Utils utils = new Utils(driver);
         utils.setWait(sandBox);
         firstPage.clickSandBoxButton();
@@ -87,7 +89,7 @@ public class  SandBoxPageTest extends BaseTest {
 }
 
     /*
-    //@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+
     @Test
     //@Order(1)
     public void InputData() {

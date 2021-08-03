@@ -12,11 +12,10 @@ import pages.CreateAccountPage;
 
 import java.io.ByteArrayInputStream;
 
-
+@Disabled
 public class createAccountPageTest extends BaseTest {
 
     @Test
-    @Disabled
     public void CreateAccountCheck() {
         CreateAccountPage createAccountPage = new CreateAccountPage(driver);
         homePage.clickCreateAccountButton();
