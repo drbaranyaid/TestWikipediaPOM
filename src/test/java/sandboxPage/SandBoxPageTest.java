@@ -13,7 +13,7 @@ import utils.Utils;
 import java.io.ByteArrayInputStream;
 
 
-public class SandBoxPageTest extends BaseTest {
+public class  SandBoxPageTest extends BaseTest {
 
     FirstPage firstPage;
     LoginPage loginPage;
