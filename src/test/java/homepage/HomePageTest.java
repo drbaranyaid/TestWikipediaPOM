@@ -37,14 +37,14 @@ public class HomePageTest extends BaseTest {
     @Test
     public void SearchDataLink() {
         homePage.searchData();
-        Assertions.assertEquals("https://en.wikipedia.org/w/index.php?search=&title=Special%3ASearch&go=Go", driver.getCurrentUrl());
+        Assertions.assertEquals("https://en.wikipedia.org/w/index.php?search=font+types&title=Special%3ASearch&go=Go&ns0=1", driver.getCurrentUrl());
     }
 
     @Test
     public void SearchRepeatedData() {
         homePage.repeatedMultiInputSearch();
         homePage.searchData();
-        Assertions.assertEquals("https://en.wikipedia.org/w/index.php?search=The+black+tea+bad+effects+to+an+organism&title=Special%3ASearch&go=Go&ns0=1", driver.getCurrentUrl());
+        Assertions.assertEquals("https://en.wikipedia.org/w/index.php?search=The+black+tea+bad+effects+to+an+organismfont+types&title=Special%3ASearch&go=Go&ns0=1", driver.getCurrentUrl());
         Assertions.assertTrue(homePage.FindingDiv());
     }
 
@@ -52,7 +52,7 @@ public class HomePageTest extends BaseTest {
     public void SearchRepeatedDataCheckedWithAllData() {
         homePage.repeatedMultiInputSearch();
         homePage.searchData();
-        Assertions.assertEquals("https://en.wikipedia.org/w/index.php?search=The+black+tea+bad+effects+to+an+organism&title=Special%3ASearch&go=Go&ns0=1", driver.getCurrentUrl());
+        Assertions.assertEquals("https://en.wikipedia.org/w/index.php?search=The+black+tea+bad+effects+to+an+organismfont+types&title=Special%3ASearch&go=Go&ns0=1", driver.getCurrentUrl());
         Assertions.assertTrue(homePage.FindingDivGeneral("black tea bad effects"));
     }
 
