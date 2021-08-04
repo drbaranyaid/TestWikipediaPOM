@@ -17,9 +17,13 @@ public class createAccountPageTest extends BaseTest {
     @Test
     public void CreateAccountCheck() {
         CreateAccountPage createAccountPage = new CreateAccountPage(driver);
+        TakeScreenshot2();
         homePage.clickCreateAccountButton();
+        TakeScreenshot2();
         createAccountPage.typeUserNameToCreateAccount(user);
+        TakeScreenshot2();
         createAccountPage.typePasswordToCreateAccount(pass);
+        TakeScreenshot2();
         createAccountPage.typeEmailToCreateAccount(email);
         TakeScreenshot2();
         createAccountPage.clickCreateAccountButton();
