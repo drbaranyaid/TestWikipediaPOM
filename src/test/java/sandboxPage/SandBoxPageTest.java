@@ -35,7 +35,7 @@ public class  SandBoxPageTest extends BaseTest {
         utils.setWait(sandBox);
         firstPage.clickSandBoxButton();
         TakeScreenshot();
-        driver.findElement(By.xpath( "//*[@id='noarticletext']/tbody/tr/td/ul/li[1]/b/a")).click();
+         driver.findElement(By.xpath( "//*[@id='noarticletext']/tbody/tr/td/ul/li[1]/b/a")).click();
         TakeScreenshot();
         SandBoxPage sandboxPage = new SandBoxPage(driver);
         sandboxPage.textFieldClear();

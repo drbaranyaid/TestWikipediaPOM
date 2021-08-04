@@ -10,7 +10,7 @@ import org.openqa.selenium.By;
 
 import java.util.List;
 
-public class SearchResultPageTest extends BaseTest {
+public class  SearchResultPageTest extends BaseTest {
     @Test
     public void SearchMorePagesListCheck() {
         SearchResultPage searchResultPage = new SearchResultPage(driver);
