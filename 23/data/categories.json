@@ -1,0 +1,56 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='pt-sandbox']/a (tried for 10 second(s) with 500 milliseconds interval)",
+      "children" : [ {
+        "name" : "repeatedData()",
+        "uid" : "d9b2ad09675ba7e3",
+        "parentUid" : "a03127c9b7b5a6e54500200179687de0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628076128118,
+          "stop" : 1628076149426,
+          "duration" : 21308
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "InputClearModifyData()",
+        "uid" : "65d7c6f6964e4356",
+        "parentUid" : "a03127c9b7b5a6e54500200179687de0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628076149436,
+          "stop" : 1628076170803,
+          "duration" : 21367
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a03127c9b7b5a6e54500200179687de0"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id='wpName2']\"}\n  (Session info: headless chrome=92.0.4515.131)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az83-686', ip: '10.1.0.135', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '16.0.2'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.ga0c5J}, goog:chromeOptions: {debuggerAddress: localhost:33363}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 2a72941a392ebb8292fa8cc360086937\n*** Element info: {Using=xpath, value=//*[@id='wpName2']}",
+      "children" : [ {
+        "name" : "CreateAccountCheck()",
+        "uid" : "e35f96ccdbf0ae",
+        "parentUid" : "a1da3dd8802410389fba3e563157cad7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628076278983,
+          "stop" : 1628076290255,
+          "duration" : 11272
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a1da3dd8802410389fba3e563157cad7"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

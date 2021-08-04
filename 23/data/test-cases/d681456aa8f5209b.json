@@ -1,0 +1,210 @@
+{
+  "uid" : "d681456aa8f5209b",
+  "name" : "SearchPagesTest2()",
+  "fullName" : "searchResultPage.SearchResultPageTest.SearchPagesTest2",
+  "historyId" : "988cabb778d1566ecec863dea0cf96e9",
+  "time" : {
+    "start" : 1628076268153,
+    "stop" : 1628076274386,
+    "duration" : 6233
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "SetUp",
+    "time" : {
+      "start" : 1628076268153,
+      "stop" : 1628076268819,
+      "duration" : 666
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1628076274317,
+      "stop" : 1628076274385,
+      "duration" : 68
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az83-686"
+  }, {
+    "name" : "thread",
+    "value" : "4981@fv-az83-686.ForkJoinPool-1-worker-3(16)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "searchResultPage.SearchResultPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "searchResultPage.SearchResultPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "SearchPagesTest2"
+  }, {
+    "name" : "suite",
+    "value" : "searchResultPage.SearchResultPageTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 4,
+        "passed" : 9,
+        "unknown" : 0,
+        "total" : 13
+      },
+      "items" : [ {
+        "uid" : "1b8b8d9bfa7d726b",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/22//#testresult/1b8b8d9bfa7d726b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628069211140,
+          "stop" : 1628069216739,
+          "duration" : 5599
+        }
+      }, {
+        "uid" : "ca86253f66944da9",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/21//#testresult/ca86253f66944da9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628027873637,
+          "stop" : 1628027880359,
+          "duration" : 6722
+        }
+      }, {
+        "uid" : "e1c1af309f0f7ac8",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/20//#testresult/e1c1af309f0f7ac8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628026313533,
+          "stop" : 1628026320792,
+          "duration" : 7259
+        }
+      }, {
+        "uid" : "6a5854fb59ccd58c",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/19//#testresult/6a5854fb59ccd58c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628022249733,
+          "stop" : 1628022256661,
+          "duration" : 6928
+        }
+      }, {
+        "uid" : "27d7afc9a72c2759",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/18//#testresult/27d7afc9a72c2759",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628020763130,
+          "stop" : 1628020769475,
+          "duration" : 6345
+        }
+      }, {
+        "uid" : "4065947f140eb102",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/17//#testresult/4065947f140eb102",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628017689846,
+          "stop" : 1628017696896,
+          "duration" : 7050
+        }
+      }, {
+        "uid" : "42e0ee803671c030",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/16//#testresult/42e0ee803671c030",
+        "status" : "skipped",
+        "statusDetails" : "class searchResultPage.SearchResultPageTest is @Disabled",
+        "time" : {
+          "start" : 1628012714725,
+          "stop" : 1628012714725,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "1c2b817ff55de079",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/15//#testresult/1c2b817ff55de079",
+        "status" : "skipped",
+        "statusDetails" : "class searchResultPage.SearchResultPageTest is @Disabled",
+        "time" : {
+          "start" : 1628012208090,
+          "stop" : 1628012208090,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "f9f1dd7ff7997f19",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/14//#testresult/f9f1dd7ff7997f19",
+        "status" : "skipped",
+        "statusDetails" : "class searchResultPage.SearchResultPageTest is @Disabled",
+        "time" : {
+          "start" : 1628011907123,
+          "stop" : 1628011907123,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "85e8ad61e3e51c99",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/13//#testresult/85e8ad61e3e51c99",
+        "status" : "skipped",
+        "statusDetails" : "class searchResultPage.SearchResultPageTest is @Disabled",
+        "time" : {
+          "start" : 1628011498764,
+          "stop" : 1628011498764,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "60090e7b9281ff1e",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/12//#testresult/60090e7b9281ff1e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628004143526,
+          "stop" : 1628004149623,
+          "duration" : 6097
+        }
+      }, {
+        "uid" : "7e2a3413b003c3c",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/11//#testresult/7e2a3413b003c3c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628002017864,
+          "stop" : 1628002023874,
+          "duration" : 6010
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d681456aa8f5209b.json",
+  "parameterValues" : [ ]
+}
