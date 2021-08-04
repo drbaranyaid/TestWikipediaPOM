@@ -1,0 +1,201 @@
+[ {
+  "uid" : "24cfe5844fa790a5",
+  "name" : "invalidLoginCheck()",
+  "time" : {
+    "start" : 1628105646408,
+    "stop" : 1628105646555,
+    "duration" : 147
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "1aad07da8933b49e",
+  "name" : "loginCheck()",
+  "time" : {
+    "start" : 1628105645694,
+    "stop" : 1628105646337,
+    "duration" : 643
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "14522c5713549426",
+  "name" : "pageCheckCreateAccount()",
+  "time" : {
+    "start" : 1628105646973,
+    "stop" : 1628105647141,
+    "duration" : 168
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "33794698fa695e11",
+  "name" : "SearchInputClearModifyData()",
+  "time" : {
+    "start" : 1628105647145,
+    "stop" : 1628105647284,
+    "duration" : 139
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "5931a57dee86dc61",
+  "name" : "SearchRepeatedData()",
+  "time" : {
+    "start" : 1628105647290,
+    "stop" : 1628105647436,
+    "duration" : 146
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "437995de79339acb",
+  "name" : "SearchPagesTest2()",
+  "time" : {
+    "start" : 1628105648646,
+    "stop" : 1628105648788,
+    "duration" : 142
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "7b79e25af88fc2ad",
+  "name" : "SearchPagesTest()",
+  "time" : {
+    "start" : 1628105648350,
+    "stop" : 1628105648500,
+    "duration" : 150
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "627ac8ac4c0be947",
+  "name" : "SearchDataLink()",
+  "time" : {
+    "start" : 1628105646756,
+    "stop" : 1628105646965,
+    "duration" : 209
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "2cef83757cec77ea",
+  "name" : "LogoutTest()",
+  "time" : {
+    "start" : 1628105649371,
+    "stop" : 1628105649529,
+    "duration" : 158
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "1115cc0da01019bf",
+  "name" : "testDataList()",
+  "time" : {
+    "start" : 1628105648504,
+    "stop" : 1628105648642,
+    "duration" : 138
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "5de7f38fe53adf20",
+  "name" : "CreateAccountCheck()",
+  "time" : {
+    "start" : 1628105648968,
+    "stop" : 1628105649191,
+    "duration" : 223
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "9eee598a641a8b61",
+  "name" : "pageCheckLogin()",
+  "time" : {
+    "start" : 1628105647743,
+    "stop" : 1628105647884,
+    "duration" : 141
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "5faa1b6dd2161fa6",
+  "name" : "SearchMorePagesListCheck()",
+  "time" : {
+    "start" : 1628105648797,
+    "stop" : 1628105648951,
+    "duration" : 154
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "315aae08955fc6cb",
+  "name" : "PrivacyPolicyUse()",
+  "time" : {
+    "start" : 1628105647887,
+    "stop" : 1628105648020,
+    "duration" : 133
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "c17dd81610680473",
+  "name" : "InputClearModifyData()",
+  "time" : {
+    "start" : 1628105648206,
+    "stop" : 1628105648345,
+    "duration" : 139
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "340aeabe1cab5363",
+  "name" : "testPrivacyAndPolicyLink()",
+  "time" : {
+    "start" : 1628105647446,
+    "stop" : 1628105647589,
+    "duration" : 143
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "db97f34942a312b6",
+  "name" : "SaveToFile()",
+  "time" : {
+    "start" : 1628105649206,
+    "stop" : 1628105649368,
+    "duration" : 162
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "b1a4bf954546bf06",
+  "name" : "ZeroLogIn()",
+  "time" : {
+    "start" : 1628105646561,
+    "stop" : 1628105646729,
+    "duration" : 168
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "e252d90d31079842",
+  "name" : "repeatedData()",
+  "time" : {
+    "start" : 1628105648030,
+    "stop" : 1628105648201,
+    "duration" : 171
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "dc25eb66a4076b33",
+  "name" : "SearchRepeatedDataCheckedWithAllData()",
+  "time" : {
+    "start" : 1628105647595,
+    "stop" : 1628105647740,
+    "duration" : 145
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]
