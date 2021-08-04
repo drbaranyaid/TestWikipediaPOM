@@ -1,0 +1,107 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected: <https://en.wikipedia.org/w/index.php?search=&title=Special%3ASearch&go=Go> but was: <https://en.wikipedia.org/w/index.php?search=font+types&title=Special%3ASearch&go=Go&ns0=1>",
+      "children" : [ {
+        "name" : "SearchDataLink()",
+        "uid" : "f45967397a5193a4",
+        "parentUid" : "8cc5f1a7d008f48995eb7666c3f45c1b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628106089984,
+          "stop" : 1628106091822,
+          "duration" : 1838
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8cc5f1a7d008f48995eb7666c3f45c1b"
+    }, {
+      "name" : "expected: <https://en.wikipedia.org/w/index.php?search=The+black+tea+bad+effects+to+an+organism&title=Special%3ASearch&go=Go&ns0=1> but was: <https://en.wikipedia.org/w/index.php?search=The+black+tea+bad+effects+to+an+organismfont+types&title=Special%3ASearch&go=Go&ns0=1>",
+      "children" : [ {
+        "name" : "SearchRepeatedData()",
+        "uid" : "b196e96a651461f7",
+        "parentUid" : "27b35cd9e19379951b99eb7aa36dae9b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628106096326,
+          "stop" : 1628106098323,
+          "duration" : 1997
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "SearchRepeatedDataCheckedWithAllData()",
+        "uid" : "e9c3c1a49153a964",
+        "parentUid" : "27b35cd9e19379951b99eb7aa36dae9b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628106099455,
+          "stop" : 1628106101519,
+          "duration" : 2064
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "27b35cd9e19379951b99eb7aa36dae9b"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='pt-sandbox']/a (tried for 10 second(s) with 500 milliseconds interval)",
+      "children" : [ {
+        "name" : "repeatedData()",
+        "uid" : "80c8c59f67f6de65",
+        "parentUid" : "a03127c9b7b5a6e54500200179687de0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628106103854,
+          "stop" : 1628106125459,
+          "duration" : 21605
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "InputClearModifyData()",
+        "uid" : "4aaae6cb0ea7d3e",
+        "parentUid" : "a03127c9b7b5a6e54500200179687de0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628106125464,
+          "stop" : 1628106146954,
+          "duration" : 21490
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a03127c9b7b5a6e54500200179687de0"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id='wpName2']\"}\n  (Session info: headless chrome=92.0.4515.131)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az47-868', ip: '10.1.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '16.0.2'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.zSqK5E}, goog:chromeOptions: {debuggerAddress: localhost:44427}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 18907ff4a8b6c24337fccb7e0070d900\n*** Element info: {Using=xpath, value=//*[@id='wpName2']}",
+      "children" : [ {
+        "name" : "CreateAccountCheck()",
+        "uid" : "9991e4f66d6f4d7d",
+        "parentUid" : "9f8def500abbef5fe7bc23524491fd0b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628106261095,
+          "stop" : 1628106272704,
+          "duration" : 11609
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9f8def500abbef5fe7bc23524491fd0b"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
