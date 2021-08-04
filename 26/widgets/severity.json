@@ -1,0 +1,201 @@
+[ {
+  "uid" : "1f0c466cd6f00bb2",
+  "name" : "LogoutTest()",
+  "time" : {
+    "start" : 1628112329249,
+    "stop" : 1628112336118,
+    "duration" : 6869
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f00227343d979fdf",
+  "name" : "ZeroLogIn()",
+  "time" : {
+    "start" : 1628112136865,
+    "stop" : 1628112138310,
+    "duration" : 1445
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "105cb00bde210b91",
+  "name" : "CreateAccountCheck()",
+  "time" : {
+    "start" : 1628112313619,
+    "stop" : 1628112325116,
+    "duration" : 11497
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "8195cc51cd03f2a",
+  "name" : "SearchRepeatedData()",
+  "time" : {
+    "start" : 1628112144269,
+    "stop" : 1628112146245,
+    "duration" : 1976
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4122422a78d2f1d",
+  "name" : "PrivacyPolicyUse()",
+  "time" : {
+    "start" : 1628112150486,
+    "stop" : 1628112151595,
+    "duration" : 1109
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cbb9eeb315c964bd",
+  "name" : "SaveToFile()",
+  "time" : {
+    "start" : 1628112325123,
+    "stop" : 1628112329247,
+    "duration" : 4124
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d9f9f0b6f67841d0",
+  "name" : "pageCheckCreateAccount()",
+  "time" : {
+    "start" : 1628112139944,
+    "stop" : 1628112141239,
+    "duration" : 1295
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b2945c60e8b6c1fa",
+  "name" : "pageCheckLogin()",
+  "time" : {
+    "start" : 1628112149334,
+    "stop" : 1628112150484,
+    "duration" : 1150
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a3baeab86b4798f",
+  "name" : "SearchPagesTest()",
+  "time" : {
+    "start" : 1628112194598,
+    "stop" : 1628112198090,
+    "duration" : 3492
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b1b04060c1262f75",
+  "name" : "SearchDataLink()",
+  "time" : {
+    "start" : 1628112138315,
+    "stop" : 1628112139941,
+    "duration" : 1626
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5c48270dcdb1777",
+  "name" : "SearchMorePagesListCheck()",
+  "time" : {
+    "start" : 1628112308694,
+    "stop" : 1628112313616,
+    "duration" : 4922
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "102a51fa69f69c97",
+  "name" : "repeatedData()",
+  "time" : {
+    "start" : 1628112151600,
+    "stop" : 1628112173077,
+    "duration" : 21477
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "87a5d2202099b7f4",
+  "name" : "invalidLoginCheck()",
+  "time" : {
+    "start" : 1628112134960,
+    "stop" : 1628112136861,
+    "duration" : 1901
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "521117c75aa13aa0",
+  "name" : "SearchRepeatedDataCheckedWithAllData()",
+  "time" : {
+    "start" : 1628112147253,
+    "stop" : 1628112149331,
+    "duration" : 2078
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f52ce6665f294d3a",
+  "name" : "testPrivacyAndPolicyLink()",
+  "time" : {
+    "start" : 1628112146247,
+    "stop" : 1628112147250,
+    "duration" : 1003
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "adfc971ffa42a247",
+  "name" : "SearchPagesTest2()",
+  "time" : {
+    "start" : 1628112302239,
+    "stop" : 1628112308690,
+    "duration" : 6451
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a5a2b591b5831c6b",
+  "name" : "SearchInputClearModifyData()",
+  "time" : {
+    "start" : 1628112141241,
+    "stop" : 1628112144264,
+    "duration" : 3023
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8d5c5c172874cf23",
+  "name" : "InputClearModifyData()",
+  "time" : {
+    "start" : 1628112173084,
+    "stop" : 1628112194577,
+    "duration" : 21493
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "76d76d4e0c53bf4d",
+  "name" : "loginCheck()",
+  "time" : {
+    "start" : 1628112130197,
+    "stop" : 1628112134883,
+    "duration" : 4686
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "da02880fac50fefc",
+  "name" : "testDataList()",
+  "time" : {
+    "start" : 1628112198092,
+    "stop" : 1628112302236,
+    "duration" : 104144
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
