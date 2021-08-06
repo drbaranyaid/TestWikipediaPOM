@@ -25,6 +25,16 @@ public class FirstPageTest extends BaseTest {
     }
 
     @Test
+    public void LogoutTest2() {
+        loginPage = new LoginPage(driver);
+        loginPage.ValidLogin();
+        firstPage = new FirstPage(driver);
+        firstPage.clickLogoutButton();
+        homePage = new HomePage(driver);
+        Assertions.assertEquals("https://en.wikipedia.org/wiki/Main_Page",driver.getCurrentUrl());
+    }
+
+    @Test
     public void SaveToFile() {
         loginPage = new LoginPage(driver);
         loginPage.ValidLogin();

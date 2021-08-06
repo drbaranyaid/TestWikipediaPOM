@@ -35,10 +35,11 @@ public class HomePage {
         new FirstPage(driver);
     }
 
-    public void clickPrivacyPolicyButton() {
+    public PrivacyPolicyPage clickPrivacyPolicyButton() {
         driver.findElement(privacyPolicyButton).click();
-        new PrivacyPolicyPage(driver);
+        return new PrivacyPolicyPage(driver);
     }
+
 
     public void searchDataGeneral(String data) {
         driver.findElement(SearchInputField).sendKeys(data);
