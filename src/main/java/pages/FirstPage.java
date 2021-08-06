@@ -1,6 +1,5 @@
 package pages;
 
-import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import java.io.File;
@@ -31,7 +30,7 @@ public class FirstPage {
         new SandBoxPage(driver);
     }
 
-    public void writeToAFile() {
+    public StringBuilder writeToAFile() {
         try {
             FileWriter fileWriter = new FileWriter("SaveToFile.txt");
             fileWriter.append(driver.findElement(By.xpath("//*[@id=\"mp-itn\"]")).getText()).append("\n");
@@ -44,15 +43,14 @@ public class FirstPage {
             File file = new File("SaveToFile.txt");
             Scanner scanner = new Scanner(file);
             while (scanner.hasNextLine()) {
-                data.append(scanner.nextLine());
+                data.append(scanner.nextLine()+"\n");
             }
             scanner.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
         System.out.println(data);
-        Assertions.assertTrue(data.toString().contains("Nominate an article"));
-        //Assertions.assertTrue(driver.findElement(By.xpath("//*[@id=\"mp-itn\"]")).getText().contains(data.toString()))
+        return data;
     }
 
 

@@ -3,6 +3,7 @@ package firstPage;
 import base.BaseTest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
 import pages.FirstPage;
 import pages.HomePage;
 import pages.LoginPage;
@@ -40,5 +41,7 @@ public class FirstPageTest extends BaseTest {
         loginPage.ValidLogin();
         firstPage = new FirstPage(driver);
         firstPage.writeToAFile();
+        Assertions.assertTrue(firstPage.writeToAFile().toString().contains("Nominate an article"));
+        Assertions.assertEquals(driver.findElement(By.xpath("//*[@id=\"mp-itn\"]")).getText()+"\n",firstPage.writeToAFile().toString());
     }
 }
