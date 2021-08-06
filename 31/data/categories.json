@@ -1,0 +1,98 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"wpTextbox1\"]\"}\n  (Session info: headless chrome=92.0.4515.131)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az72-552', ip: '10.1.0.116', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '16.0.2'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.9UWWSN}, goog:chromeOptions: {debuggerAddress: localhost:42471}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 9812434380b7083937c9a9d225cb67aa\n*** Element info: {Using=xpath, value=//*[@id=\"wpTextbox1\"]}",
+      "children" : [ {
+        "name" : "repeatedData()",
+        "uid" : "1218aecde5059185",
+        "parentUid" : "5840c3d28619b2f38024f256b8fbbbbb",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628285387628,
+          "stop" : 1628285413922,
+          "duration" : 26294
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5840c3d28619b2f38024f256b8fbbbbb"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"wpTextbox1\"]\"}\n  (Session info: headless chrome=92.0.4515.131)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az72-552', ip: '10.1.0.116', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '16.0.2'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.4UEeEb}, goog:chromeOptions: {debuggerAddress: localhost:40555}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ae6077bf098bacb009a257ee1a3ce388\n*** Element info: {Using=xpath, value=//*[@id=\"wpTextbox1\"]}",
+      "children" : [ {
+        "name" : "InputClearModifyData()",
+        "uid" : "be7fff8e0459c918",
+        "parentUid" : "da91f7710a0719e3ecf4745623b9f2eb",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628285413945,
+          "stop" : 1628285440059,
+          "duration" : 26114
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "da91f7710a0719e3ecf4745623b9f2eb"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id='wpName2']\"}\n  (Session info: headless chrome=92.0.4515.131)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az72-552', ip: '10.1.0.116', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '16.0.2'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.ug5GtW}, goog:chromeOptions: {debuggerAddress: localhost:35773}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 62c2b4835c8e67e763662abd4dd10ac4\n*** Element info: {Using=xpath, value=//*[@id='wpName2']}",
+      "children" : [ {
+        "name" : "CreateAccountCheck()",
+        "uid" : "23fb2743f657bc4e",
+        "parentUid" : "aa16eb6d32235b150dd1185a3b70e24c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628285664612,
+          "stop" : 1628285677308,
+          "duration" : 12696
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "aa16eb6d32235b150dd1185a3b70e24c"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected: <Font types\nUbuntu (typeface)\nBaptismal font\nBitstream Speedo font\nMonospaced font\nOblique type\nLucida\nGeorgia (typeface)\nFonts on Macintosh\nAdobe Fonts\nHobo (typeface)\nType foundry\nDroid fonts\nEmphasis (typography)\nCambria (typeface)\nFallback font\nTypeface anatomy\nConstantia (typeface)\nCandara\nComputer Modern\nCroscore fonts\nUbuntu (typeface)\nBaptismal font\nBitstream Speedo Fonts\nMonospaced font\nOblique type\nLucida\nGeorgia (typeface)\nFonts on Macintosh\nAdobe Fonts\nHobo (typeface)\nType foundry\nDroid fonts\nEmphasis (typography)\nCambria (typeface)\nFallback font\nTypeface anatomy\nConstantia (typeface)\nCandara\nComputer Modern\n> but was: <List of typefaces\nTypeface\nComputer font\nPostScript fonts\nFont\nTrueType\nOpenType\nWonton font\nWeb Open Font Format\nClearType\nUnicode font\nVariable font\nCalibri\nLiberation fonts\nFont Awesome\nSerif\nGoogle Fonts\nType\nConsolas\nItalic type\nUbuntu (typeface)\nBitstream Speedo Fonts\nMonospaced font\nFonts on Macintosh\nGeorgia (typeface)\nOblique type\nLucida\nBaptismal font\nEmphasis (typography)\nCambria (typeface)\nDroid fonts\nAdobe Fonts\nType foundry\nHobo (typeface)\nConstantia (typeface)\nCandara\nDisplay typeface\nTypeface anatomy\nEmbedded OpenType\nFallback font\n>",
+      "children" : [ {
+        "name" : "SearchMorePagesListCheck()",
+        "uid" : "d6d7c5c17c8aa7c2",
+        "parentUid" : "a26d8a7e81866aea5fddc6d3beb8f5aa",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628285656788,
+          "stop" : 1628285660861,
+          "duration" : 4073
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a26d8a7e81866aea5fddc6d3beb8f5aa"
+    }, {
+      "name" : "expected: <Daihatsu\nDaihatsu Move\nDaihatsu Copen\nAstra Daihatsu Motor\nDaihatsu Tanto\nDaihatsu Terios\nDaihatsu E-series engine\nDaihatsu Charade\nDaihatsu Rugger\nDaihatsu Midget\nDaihatsu Hijet\nDaihatsu Mira\nDaihatsu Charmant\nToyota SZ engine\nDaihatsu K-series engine\nDaihatsu Boon\nToyota Avanza\nDaihatsu Cast\nDaihatsu New Global Architecture\nToyota bB\nDaihatsu\nDaihatsu Move\nDaihatsu Copen\nAstra Daihatsu Motor\nDaihatsu Tanto\nDaihatsu Terios\nDaihatsu E-series engine\nDaihatsu Charade\nDaihatsu Rugger\nDaihatsu Midget\nDaihatsu Hijet\nDaihatsu Mira\nDaihatsu Charmant\nToyota SZ engine\nDaihatsu K-series engine\nDaihatsu Boon\nToyota Avanza\nDaihatsu Cast\nDaihatsu Compagno\nDaihatsu New Global Architecture\n> but was: <Daihatsu\nDaihatsu Copen\nDaihatsu Move\nAstra Daihatsu Motor\nDaihatsu E-series engine\nDaihatsu Tanto\nDaihatsu Terios\nDaihatsu Mira\nDaihatsu Charade\nDaihatsu Midget\nDaihatsu Hijet\nDaihatsu Rugger\nDaihatsu Charmant\nToyota SZ engine\nToyota Avanza\nDaihatsu K-series engine\nDaihatsu Cast\nDaihatsu New Global Architecture\nDaihatsu Boon\nToyota bB\nDaihatsu Boon\nToyota bB\nDaihatsu K-series engine\nDaihatsu Ayla\nDaihatsu Sigra\nDaihatsu Move Canbus\nDaihatsu Wake\nDaihatsu C-series engine\nToku Daihatsu-class landing craft\nDaihatsu J-series engine\nDaihatsu Thor\nToyota KR engine\nSubaru\nDaihatsu H-series engine\nPerodua Myvi\nDaihatsu Mira e:S\nList of Toyota vehicles\nDaihatsu Gran Max\nList of Subaru vehicles\nDaihatsu Mira Cocoa\n>",
+      "children" : [ {
+        "name" : "SearchPagesTestListCheck2()",
+        "uid" : "a65fc616896e9bcd",
+        "parentUid" : "c039e1bb04363ef1777696caf464ffe9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628285660865,
+          "stop" : 1628285664602,
+          "duration" : 3737
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c039e1bb04363ef1777696caf464ffe9"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
