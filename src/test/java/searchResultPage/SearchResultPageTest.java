@@ -8,13 +8,15 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
 import java.util.List;
-import java.util.Locale;
 
 public class  SearchResultPageTest extends BaseTest {
+
+    private final By Next20 = By.xpath("//*[@id='mw-content-text']/div[3]/p[2]/a[1]");
+    private final By ResultField = By.xpath("//*[@id=\"mw-content-text\"]/div[3]/p[1]/i/a[1]");
     @Test
     public void SearchMorePagesListCheck() {
         SearchResultPage searchResultPage = new SearchResultPage(driver);
-        homePage.searchData();
+        homePage.searchDataGeneral("Font types");
         String result = "Font types\n" +
                 "Ubuntu (typeface)\n" +
                 "Baptismal font\n" +
@@ -66,16 +68,16 @@ public class  SearchResultPageTest extends BaseTest {
         homePage.searchData();
         SearchResultPage searchResultPage = new SearchResultPage(driver);
         searchResultPage.SearchPages();
-        Assertions.assertEquals("Font types", driver.findElement(By.xpath("//*[@id=\"mw-content-text\"]/div[3]/p[1]/i/a[1]")).getText());
-        Assertions.assertEquals("next 20", driver.findElement(By.xpath("//*[@id=\"mw-content-text\"]/div[3]/p[2]/a[2]")).getText());
+        Assertions.assertEquals("Font types", driver.findElement(ResultField).getText());
+        Assertions.assertEquals("next 20", driver.findElement(Next20).getText());
     }
 
     @Test
     public void SearchMorePagesResultCheck() {
         SearchResultPage searchResultPage = new SearchResultPage(driver);
         homePage.searchData();
-        Assertions.assertEquals("Font types", driver.findElement(By.xpath("//*[@id=\"mw-content-text\"]/div[3]/p[1]/i/a[1]")).getText());
-        Assertions.assertEquals("20", driver.findElement(By.xpath("//*[@id=\"mw-content-text\"]/div[3]/p[2]/a[2]")).getText());}
+        Assertions.assertEquals("Font types", driver.findElement(ResultField).getText());
+        Assertions.assertEquals("next 20", driver.findElement(Next20).getText());}
 
 
     @Test

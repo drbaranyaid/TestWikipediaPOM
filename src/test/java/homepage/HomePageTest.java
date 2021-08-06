@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import utils.Utils;
 
 public class HomePageTest extends BaseTest {
 
@@ -23,8 +24,8 @@ public class HomePageTest extends BaseTest {
     @Test
     public void PrivacyPolicyUse() {
         homePage.clickPrivacyPolicyButton();
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0, 5000)");
+        Utils utils=new Utils(driver);
+        Utils.scrollDown(driver);
         Assertions.assertEquals("Privacy policy", driver.findElement(By.xpath("//*[@id='mw-normal-catlinks']/ul/li[1]/a")).getText());
     }
 

@@ -12,6 +12,7 @@ import pages.LoginPage;
 public class LoginPageTest extends BaseTest {
     private LoginPage loginPage;
     public final By errorbox = By.xpath("//*[@id=\"userloginForm\"]/form/div[1]");
+    public final By avatara =By.xpath("//*[@id=\"pt-userpage\"]/a");
 
     @Test
     public void loginCheck() {
@@ -21,7 +22,7 @@ public class LoginPageTest extends BaseTest {
         loginPage.typePassword(pass);
         loginPage.clickLoginButton();
         WebDriverWait wait = new WebDriverWait(driver, 25);
-        WebElement avatar = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"pt-userpage\"]/a")));
+        WebElement avatar = wait.until(ExpectedConditions.visibilityOfElementLocated(avatara));
         Assertions.assertEquals("KisVirág9", avatar.getText());
     }
     @Test

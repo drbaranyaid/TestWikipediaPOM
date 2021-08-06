@@ -15,6 +15,8 @@ public class FirstPageTest extends BaseTest {
     HomePage homePage;
     LoginPage loginPage;
 
+    public By searchedField = By.xpath("//*[@id=\"mp-itn\"]");
+
     @Test
     public void LogoutTest() {
         loginPage = new LoginPage(driver);
@@ -42,6 +44,6 @@ public class FirstPageTest extends BaseTest {
         firstPage = new FirstPage(driver);
         firstPage.writeToAFile();
         Assertions.assertTrue(firstPage.writeToAFile().toString().contains("Nominate an article"));
-        Assertions.assertEquals(driver.findElement(By.xpath("//*[@id=\"mp-itn\"]")).getText()+"\n",firstPage.writeToAFile().toString());
+        Assertions.assertEquals(driver.findElement(searchedField).getText()+"\n",firstPage.writeToAFile().toString());
     }
 }

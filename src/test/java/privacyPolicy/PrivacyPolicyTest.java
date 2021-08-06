@@ -3,15 +3,11 @@ package privacyPolicy;
 import base.BaseTest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 import pages.HomePage;
-import pages.LoginPage;
 import pages.PrivacyPolicyPage;
+import utils.Utils;
 
 public class PrivacyPolicyTest extends BaseTest {
 
@@ -19,8 +15,8 @@ public class PrivacyPolicyTest extends BaseTest {
     public void PrivacyTestVersionCheck() {
         HomePage homePage = new HomePage(driver);
         homePage.clickPrivacyPolicyButton();
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0, 5000)");
+        Utils utils=new Utils(driver);
+        Utils.scrollDown(driver);
         PrivacyPolicyPage privacyPolicyPage=new PrivacyPolicyPage(driver);
         Assertions.assertEquals("Amanda Keton", privacyPolicyPage.getTextFromPolicy());
     }
@@ -29,8 +25,8 @@ public class PrivacyPolicyTest extends BaseTest {
     public void PrivacyTestSummaryCheck() {
         HomePage homePage = new HomePage(driver);
         homePage.clickPrivacyPolicyButton();
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0, 5000)");
+        Utils utils=new Utils(driver);
+        Utils.scrollDown(driver);
         PrivacyPolicyPage privacyPolicyPage=new PrivacyPolicyPage(driver);
         privacyPolicyPage.getTextFromSummary();
         String result="Privacy Policy\n"+"This is a summary of the Privacy Policy. To read the full terms, scroll down or click here.\n" +
@@ -63,4 +59,3 @@ public class PrivacyPolicyTest extends BaseTest {
     }
 
 }
-//(html/body/div[3]/div[3]/div[5]/div[1]/ul/li/b/a)
