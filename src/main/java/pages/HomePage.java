@@ -47,16 +47,10 @@ public class HomePage {
     }
 
     public void searchData() {
-        driver.findElement(SearchInputField).sendKeys("font types");
         driver.findElement(SearchButton).click();
         new SearchResultPage(driver);
     }
 
-    public void searchDataGreenTea() {
-        driver.findElement(SearchInputField).sendKeys("Green tea");
-        driver.findElement(SearchButton).click();
-        new SearchResultPage(driver);
-    }
 
     public void repeatedMultiInputSearch() {
         String[] dataItem;
@@ -77,7 +71,7 @@ public class HomePage {
 
     }
 
-    public boolean FindingDiv() {
+    public boolean FindingSearchedItems() {
         List<WebElement> div = driver.findElements(By.xpath("//*[@id=\"mw-content-text\"]/div[3]"));
         boolean isPresent = false;
         String LinksText = "";
@@ -91,7 +85,7 @@ public class HomePage {
         return isPresent;
     }
 
-    public boolean FindingDivGeneral(String data) {
+    public boolean FindingSearchedItemsGeneral(String data) {
         List<WebElement> div = driver.findElements(By.xpath("//*[@id=\"mw-content-text\"]/div[3]"));
         boolean isPresent = false;
         String LinksText = "";

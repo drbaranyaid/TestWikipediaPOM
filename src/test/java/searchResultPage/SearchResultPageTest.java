@@ -1,5 +1,5 @@
 package searchResultPage;
-import org.openqa.selenium.WebElement;
+
 import pages.HomePage;
 import pages.SearchResultPage;
 import base.BaseTest;
@@ -7,14 +7,14 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
-import java.util.List;
 
-public class  SearchResultPageTest extends BaseTest {
+public class SearchResultPageTest extends BaseTest {
 
     private final By Next20 = By.xpath("//*[@id='mw-content-text']/div[3]/p[2]/a[1]");
     private final By ResultField = By.xpath("//*[@id=\"mw-content-text\"]/div[3]/p[1]/i/a[1]");
+
     @Test
-    public void SearchMorePagesListCheck() {
+    public void SearchPagesListCheck() {
         SearchResultPage searchResultPage = new SearchResultPage(driver);
         homePage.searchDataGeneral("Font types");
         String result = "Font types\n" +
@@ -56,54 +56,82 @@ public class  SearchResultPageTest extends BaseTest {
                 "Typeface anatomy\n" +
                 "Constantia (typeface)\n" +
                 "Candara\n" +
-                "Computer Modern\n";
-        searchResultPage.SearchPages();
+                "Computer Modern\n" + "Fallback font\n" +
+                "Typeface anatomy\n" +
+                "Constantia (typeface)\n" +
+                "Candara\n" +
+                "Computer Modern\n" +
+                "Croscore fonts\n" +
+                "Ubuntu (typeface)\n" +
+                "Baptismal font\n" +
+                "Bitstream Speedo Fonts\n" +
+                "Monospaced font\n" +
+                "Oblique type\n" +
+                "Lucida\n" +
+                "Georgia (typeface)\n" +
+                "Fallback font\n" +
+                "Typeface anatomy\n" +
+                "Constantia (typeface)\n" +
+                "Candara\n" +
+                "Computer Modern\n" +
+                "Croscore fonts\n" +
+                "Ubuntu (typeface)\n";
+
+        String linktext = searchResultPage.SearchPages();
         searchResultPage.ClickNext();
-        Assertions.assertEquals(result,searchResultPage.SearchPages());
+        String linktext2 = linktext + searchResultPage.SearchPages();
+        Assertions.assertEquals(result, linktext2);
     }
 
     @Test
     public void SearchMorePagesTest2() {
         HomePage homePage = new HomePage(driver);
-        homePage.searchData();
-        SearchResultPage searchResultPage = new SearchResultPage(driver);
-        searchResultPage.SearchPages();
+        homePage.searchDataGeneral("Font types");
         Assertions.assertEquals("Font types", driver.findElement(ResultField).getText());
         Assertions.assertEquals("next 20", driver.findElement(Next20).getText());
-    }
-
-    @Test
-    public void SearchMorePagesResultCheck() {
         SearchResultPage searchResultPage = new SearchResultPage(driver);
-        homePage.searchData();
+        searchResultPage.ClickNext();
         Assertions.assertEquals("Font types", driver.findElement(ResultField).getText());
-        Assertions.assertEquals("next 20", driver.findElement(Next20).getText());}
-
+        Assertions.assertEquals("previous 20", driver.findElement(Next20).getText());
+    }
 
     @Test
-    public void testDataList(){
-        homePage.searchDataGreenTea();
-        boolean isTestDataList = false;
-        int number = 0;
-        List<WebElement> words = driver.findElements(By.xpath("//*"));
-        for (WebElement element : words) {
-            try {
-                if (element.getText().toLowerCase().contains("Green tea".toLowerCase())) {
-                    System.out.println(element.getText());
-                    number += 1;
-                    isTestDataList = true;
-                }
-            } catch (Exception ignored) {
-            }
-        }
-        System.out.println(number);
-        Assertions.assertEquals(200,number);
-        Assertions.assertTrue(isTestDataList);
+    public void SearchPagesContainsCheck() {
+        SearchResultPage searchResultPage = new SearchResultPage(driver);
+        homePage.searchDataGeneral("Font types");
+        String linktext = searchResultPage.SearchPages();
+        searchResultPage.ClickNext();
+        String linktext2 = linktext + searchResultPage.SearchPages();
+        Assertions.assertTrue(linktext2.contains("font"));
+    }
+
+    @Test
+    public void SearchOnePageResultCheck() {
+        homePage.searchDataGeneral("Font types");
+        Assertions.assertEquals("Font types", driver.findElement(ResultField).getText());
+        Assertions.assertEquals("next 20", driver.findElement(Next20).getText());
+        SearchResultPage searchResultPage = new SearchResultPage(driver);
+        Assertions.assertTrue(searchResultPage.SearchPages().contains("font"));
     }
 
 
     @Test
-    public void SearchPagesTestSearchField2() {
+    public void testDataList() {
+        homePage.searchDataGeneral("green tea");
+        SearchResultPage searchResultPage = new SearchResultPage(driver);
+        Assertions.assertTrue(searchResultPage.GreenTeaCheck());
+    }
+
+    @Test
+    public void testDataListNumber() {
+        homePage.searchDataGeneral("green tea");
+        SearchResultPage searchResultPage = new SearchResultPage(driver);
+        Assertions.assertEquals(200,searchResultPage.GreenTeaCheckNumber());
+
+    }
+
+    @Test
+    public void SearchPagesTestSearchFieldShortDataTest() {
         HomePage homePage = new HomePage(driver);
         homePage.searchDataGeneral("Daihatsu types");
         SearchResultPage searchResultPage = new SearchResultPage(driver);
@@ -119,7 +147,7 @@ public class  SearchResultPageTest extends BaseTest {
         SearchResultPage searchResultPage = new SearchResultPage(driver);
         searchResultPage.SearchPages();
         searchResultPage.ClickNext();
-        String result="Daihatsu\n" +
+        String result = "Daihatsu\n" +
                 "Daihatsu Move\n" +
                 "Daihatsu Copen\n" +
                 "Astra Daihatsu Motor\n" +
@@ -157,9 +185,9 @@ public class  SearchResultPageTest extends BaseTest {
                 "Daihatsu Boon\n" +
                 "Toyota Avanza\n" +
                 "Daihatsu Cast\n" +
-                "Daihatsu Compagno\n"+
+                "Daihatsu Compagno\n" +
                 "Daihatsu New Global Architecture\n";
-        Assertions.assertEquals(result,searchResultPage.SearchPages());
+        Assertions.assertEquals(result, searchResultPage.SearchPages());
     }
 }
 
