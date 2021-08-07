@@ -1,0 +1,287 @@
+{
+  "uid" : "a03b49b33b029fb5",
+  "name" : "testDataList()",
+  "fullName" : "searchResultPage.SearchResultPageTest.testDataList",
+  "historyId" : "526d9388400de0bf9747d0bbf0abfba6",
+  "time" : {
+    "start" : 1628353651277,
+    "stop" : 1628353758028,
+    "duration" : 106751
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "SetUp",
+    "time" : {
+      "start" : 1628353651280,
+      "stop" : 1628353651915,
+      "duration" : 635
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1628353757957,
+      "stop" : 1628353758028,
+      "duration" : 71
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az72-552"
+  }, {
+    "name" : "thread",
+    "value" : "6058@fv-az72-552.ForkJoinPool-1-worker-3(16)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "searchResultPage.SearchResultPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "searchResultPage.SearchResultPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testDataList"
+  }, {
+    "name" : "suite",
+    "value" : "searchResultPage.SearchResultPageTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 8,
+        "skipped" : 4,
+        "passed" : 18,
+        "unknown" : 0,
+        "total" : 30
+      },
+      "items" : [ {
+        "uid" : "d72a68ad3c3b9cc2",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/32//#testresult/d72a68ad3c3b9cc2",
+        "status" : "broken",
+        "statusDetails" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az82-623', ip: '10.1.0.144', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '16.0.2'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: #0 0x5605f7ff5a63 <unknown>\n#1 0x5605f7d6a458 <unknown>\n#2 0x5605f7d8d2e3 <unknown>\n#3 0x5605f7d88e9f <unknown>\n#4 0x5605f7dc2b72 <unknown>\n#5 0x5605f7dbcfd3 <unknown>\n#6 0x5605f7d93514 <unknown>\n#7 0x5605f7d94505 <unknown>\n#8 0x5605f8021e2e <unknown>\n#9 0x5605f8037886 <unknown>\n#10 0x5605f8022d75 <unknown>\n#11 0x5605f8038d94 <unknown>\n#12 0x5605f80198eb <unknown>\n#13 0x5605f8053cd8 <unknown>\n#14 0x5605f8053e58 <unknown>\n#15 0x5605f806ddfd <unknown>\n#16 0x7f1d556c7609 start_thread\n",
+        "time" : {
+          "start" : 1628353165790,
+          "stop" : 1628353165964,
+          "duration" : 174
+        }
+      }, {
+        "uid" : "2c0dc1c5ed5151e2",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/31//#testresult/2c0dc1c5ed5151e2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628285440094,
+          "stop" : 1628285647993,
+          "duration" : 207899
+        }
+      }, {
+        "uid" : "78ba2e5886dafaa3",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/30//#testresult/78ba2e5886dafaa3",
+        "status" : "broken",
+        "statusDetails" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az72-552', ip: '10.1.0.134', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '16.0.2'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: #0 0x5569ef283a63 <unknown>\n#1 0x5569eeff8458 <unknown>\n#2 0x5569ef01b2e3 <unknown>\n#3 0x5569ef016e9f <unknown>\n#4 0x5569ef050b72 <unknown>\n#5 0x5569ef04afd3 <unknown>\n#6 0x5569ef021514 <unknown>\n#7 0x5569ef022505 <unknown>\n#8 0x5569ef2afe2e <unknown>\n#9 0x5569ef2c5886 <unknown>\n#10 0x5569ef2b0d75 <unknown>\n#11 0x5569ef2c6d94 <unknown>\n#12 0x5569ef2a78eb <unknown>\n#13 0x5569ef2e1cd8 <unknown>\n#14 0x5569ef2e1e58 <unknown>\n#15 0x5569ef2fbdfd <unknown>\n#16 0x7f44a9a25609 start_thread\n",
+        "time" : {
+          "start" : 1628284751469,
+          "stop" : 1628284751682,
+          "duration" : 213
+        }
+      }, {
+        "uid" : "31bd65d22716be64",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/29//#testresult/31bd65d22716be64",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628281268405,
+          "stop" : 1628281364602,
+          "duration" : 96197
+        }
+      }, {
+        "uid" : "f69fefcd6c7c63dd",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/28//#testresult/f69fefcd6c7c63dd",
+        "status" : "broken",
+        "statusDetails" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az39-10', ip: '10.1.0.233', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '16.0.2'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: #0 0x55b460599a63 <unknown>\n#1 0x55b46030e458 <unknown>\n#2 0x55b4603312e3 <unknown>\n#3 0x55b46032ce9f <unknown>\n#4 0x55b460366b72 <unknown>\n#5 0x55b460360fd3 <unknown>\n#6 0x55b460337514 <unknown>\n#7 0x55b460338505 <unknown>\n#8 0x55b4605c5e2e <unknown>\n#9 0x55b4605db886 <unknown>\n#10 0x55b4605c6d75 <unknown>\n#11 0x55b4605dcd94 <unknown>\n#12 0x55b4605bd8eb <unknown>\n#13 0x55b4605f7cd8 <unknown>\n#14 0x55b4605f7e58 <unknown>\n#15 0x55b460611dfd <unknown>\n#16 0x7f90d6d86609 start_thread\n",
+        "time" : {
+          "start" : 1628280908570,
+          "stop" : 1628280908726,
+          "duration" : 156
+        }
+      }, {
+        "uid" : "81df66c5af9642a7",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/27//#testresult/81df66c5af9642a7",
+        "status" : "broken",
+        "statusDetails" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az47-991', ip: '10.1.0.109', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '16.0.2'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: #0 0x55ca389b2a63 <unknown>\n#1 0x55ca38727458 <unknown>\n#2 0x55ca3874a2e3 <unknown>\n#3 0x55ca38745e9f <unknown>\n#4 0x55ca3877fb72 <unknown>\n#5 0x55ca38779fd3 <unknown>\n#6 0x55ca38750514 <unknown>\n#7 0x55ca38751505 <unknown>\n#8 0x55ca389dee2e <unknown>\n#9 0x55ca389f4886 <unknown>\n#10 0x55ca389dfd75 <unknown>\n#11 0x55ca389f5d94 <unknown>\n#12 0x55ca389d68eb <unknown>\n#13 0x55ca38a10cd8 <unknown>\n#14 0x55ca38a10e58 <unknown>\n#15 0x55ca38a2adfd <unknown>\n#16 0x7ff882891609 start_thread\n",
+        "time" : {
+          "start" : 1628279361993,
+          "stop" : 1628279362174,
+          "duration" : 181
+        }
+      }, {
+        "uid" : "da02880fac50fefc",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/26//#testresult/da02880fac50fefc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628112198092,
+          "stop" : 1628112302236,
+          "duration" : 104144
+        }
+      }, {
+        "uid" : "c6973e92e649878c",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/25//#testresult/c6973e92e649878c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628106150841,
+          "stop" : 1628106249509,
+          "duration" : 98668
+        }
+      }, {
+        "uid" : "1115cc0da01019bf",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/24//#testresult/1115cc0da01019bf",
+        "status" : "broken",
+        "statusDetails" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az82-65', ip: '10.1.0.81', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '16.0.2'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: #0 0x562c8d752a63 <unknown>\n#1 0x562c8d4c7458 <unknown>\n#2 0x562c8d4ea2e3 <unknown>\n#3 0x562c8d4e5e9f <unknown>\n#4 0x562c8d51fb72 <unknown>\n#5 0x562c8d519fd3 <unknown>\n#6 0x562c8d4f0514 <unknown>\n#7 0x562c8d4f1505 <unknown>\n#8 0x562c8d77ee2e <unknown>\n#9 0x562c8d794886 <unknown>\n#10 0x562c8d77fd75 <unknown>\n#11 0x562c8d795d94 <unknown>\n#12 0x562c8d7768eb <unknown>\n#13 0x562c8d7b0cd8 <unknown>\n#14 0x562c8d7b0e58 <unknown>\n#15 0x562c8d7cadfd <unknown>\n#16 0x7ff5c8923609 start_thread\n",
+        "time" : {
+          "start" : 1628105648504,
+          "stop" : 1628105648642,
+          "duration" : 138
+        }
+      }, {
+        "uid" : "b94e0d0daf5ccd7f",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/23//#testresult/b94e0d0daf5ccd7f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628076174120,
+          "stop" : 1628076268150,
+          "duration" : 94030
+        }
+      }, {
+        "uid" : "e4efe62537ee06c0",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/22//#testresult/e4efe62537ee06c0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628069118427,
+          "stop" : 1628069211138,
+          "duration" : 92711
+        }
+      }, {
+        "uid" : "955bcb78ccca98a5",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/21//#testresult/955bcb78ccca98a5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628027765744,
+          "stop" : 1628027873634,
+          "duration" : 107890
+        }
+      }, {
+        "uid" : "dd5a53cc2c3575f8",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/20//#testresult/dd5a53cc2c3575f8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628026190022,
+          "stop" : 1628026313530,
+          "duration" : 123508
+        }
+      }, {
+        "uid" : "5699f4e4ef5923c9",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/19//#testresult/5699f4e4ef5923c9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628022136442,
+          "stop" : 1628022249731,
+          "duration" : 113289
+        }
+      }, {
+        "uid" : "1bd30748005126ef",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/18//#testresult/1bd30748005126ef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628020664841,
+          "stop" : 1628020763127,
+          "duration" : 98286
+        }
+      }, {
+        "uid" : "604579523244ab31",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/17//#testresult/604579523244ab31",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628017573882,
+          "stop" : 1628017689842,
+          "duration" : 115960
+        }
+      }, {
+        "uid" : "69452df6be23f1a6",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/16//#testresult/69452df6be23f1a6",
+        "status" : "skipped",
+        "statusDetails" : "class searchResultPage.SearchResultPageTest is @Disabled",
+        "time" : {
+          "start" : 1628012714722,
+          "stop" : 1628012714722,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "7c95e6c8e46483fa",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/15//#testresult/7c95e6c8e46483fa",
+        "status" : "skipped",
+        "statusDetails" : "class searchResultPage.SearchResultPageTest is @Disabled",
+        "time" : {
+          "start" : 1628012208084,
+          "stop" : 1628012208084,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "b12a3de7b1be4def",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/14//#testresult/b12a3de7b1be4def",
+        "status" : "skipped",
+        "statusDetails" : "class searchResultPage.SearchResultPageTest is @Disabled",
+        "time" : {
+          "start" : 1628011907120,
+          "stop" : 1628011907120,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "b55795b1744f9baf",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/13//#testresult/b55795b1744f9baf",
+        "status" : "skipped",
+        "statusDetails" : "class searchResultPage.SearchResultPageTest is @Disabled",
+        "time" : {
+          "start" : 1628011498762,
+          "stop" : 1628011498762,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a03b49b33b029fb5.json",
+  "parameterValues" : [ ]
+}

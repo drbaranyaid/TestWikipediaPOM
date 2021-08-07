@@ -1,0 +1,261 @@
+[ {
+  "uid" : "a2e9998048cbc4b4",
+  "name" : "SearchPagesTestListCheck2()",
+  "time" : {
+    "start" : 1628353867308,
+    "stop" : 1628353870412,
+    "duration" : 3104
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "a03b49b33b029fb5",
+  "name" : "testDataList()",
+  "time" : {
+    "start" : 1628353651277,
+    "stop" : 1628353758028,
+    "duration" : 106751
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d50953e1c7ff2e12",
+  "name" : "SearchRepeatedDataCheckedWithAllData()",
+  "time" : {
+    "start" : 1628353595884,
+    "stop" : 1628353598139,
+    "duration" : 2255
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aa09789bbbcd6474",
+  "name" : "SaveToFile()",
+  "time" : {
+    "start" : 1628353882024,
+    "stop" : 1628353886379,
+    "duration" : 4355
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f56c254be0edf3b4",
+  "name" : "pageCheckLogin()",
+  "time" : {
+    "start" : 1628353598143,
+    "stop" : 1628353599272,
+    "duration" : 1129
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ac82451f4827f34d",
+  "name" : "invalidLoginCheck()",
+  "time" : {
+    "start" : 1628353584990,
+    "stop" : 1628353586844,
+    "duration" : 1854
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2ba337be2e3663cc",
+  "name" : "LogoutTest()",
+  "time" : {
+    "start" : 1628353891150,
+    "stop" : 1628353896936,
+    "duration" : 5786
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "23763ef6c9dffb65",
+  "name" : "loginCheck()",
+  "time" : {
+    "start" : 1628353579924,
+    "stop" : 1628353584930,
+    "duration" : 5006
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c49e7e90294ce6a9",
+  "name" : "PrivacyTestSummaryCheck()",
+  "time" : {
+    "start" : 1628353896939,
+    "stop" : 1628353898107,
+    "duration" : 1168
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f98bd7cc61113446",
+  "name" : "SearchMorePagesTest2()",
+  "time" : {
+    "start" : 1628353852722,
+    "stop" : 1628353855447,
+    "duration" : 2725
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e51a68868b42f646",
+  "name" : "repeatedData()",
+  "time" : {
+    "start" : 1628353600384,
+    "stop" : 1628353626203,
+    "duration" : 25819
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "7d23083b27497d0c",
+  "name" : "PrivacyPolicyUse()",
+  "time" : {
+    "start" : 1628353599274,
+    "stop" : 1628353600381,
+    "duration" : 1107
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5f465470b29117fe",
+  "name" : "testPrivacyAndPolicyLink()",
+  "time" : {
+    "start" : 1628353594803,
+    "stop" : 1628353595881,
+    "duration" : 1078
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "87b20cb5189838e1",
+  "name" : "PrivacyTestVersionCheck()",
+  "time" : {
+    "start" : 1628353898109,
+    "stop" : 1628353899220,
+    "duration" : 1111
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9408b76d48d00c85",
+  "name" : "SearchDataLink()",
+  "time" : {
+    "start" : 1628353588705,
+    "stop" : 1628353590416,
+    "duration" : 1711
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "77cd8e025bb7a04f",
+  "name" : "SearchInputClearModifyData()",
+  "time" : {
+    "start" : 1628353591779,
+    "stop" : 1628353594798,
+    "duration" : 3019
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "48cb7be39633be33",
+  "name" : "pageCheckCreateAccount()",
+  "time" : {
+    "start" : 1628353590422,
+    "stop" : 1628353591776,
+    "duration" : 1354
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7db064cc561c660f",
+  "name" : "LogoutTest2()",
+  "time" : {
+    "start" : 1628353886381,
+    "stop" : 1628353891148,
+    "duration" : 4767
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "689957ced772d768",
+  "name" : "SearchPagesListCheck()",
+  "time" : {
+    "start" : 1628353864142,
+    "stop" : 1628353867305,
+    "duration" : 3163
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "924792c2e8e3922a",
+  "name" : "SearchOnePageResultCheck()",
+  "time" : {
+    "start" : 1628353855449,
+    "stop" : 1628353857736,
+    "duration" : 2287
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b3ccdc8afabc4372",
+  "name" : "InputClearModifyData()",
+  "time" : {
+    "start" : 1628353626217,
+    "stop" : 1628353651267,
+    "duration" : 25050
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "4b443bc5f5b0617a",
+  "name" : "testDataListNumber()",
+  "time" : {
+    "start" : 1628353758033,
+    "stop" : 1628353852720,
+    "duration" : 94687
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "311c91fdde9326a7",
+  "name" : "ZeroLogIn()",
+  "time" : {
+    "start" : 1628353586847,
+    "stop" : 1628353588676,
+    "duration" : 1829
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cf3c704dc5c9ac52",
+  "name" : "SearchPagesContainsCheck()",
+  "time" : {
+    "start" : 1628353860919,
+    "stop" : 1628353864140,
+    "duration" : 3221
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "af72c7aa309a56b",
+  "name" : "SearchPagesTestSearchFieldShortDataTest()",
+  "time" : {
+    "start" : 1628353857739,
+    "stop" : 1628353860916,
+    "duration" : 3177
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba50c751f17179e0",
+  "name" : "CreateAccountCheck()",
+  "time" : {
+    "start" : 1628353870423,
+    "stop" : 1628353882011,
+    "duration" : 11588
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]
