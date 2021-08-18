@@ -1,6 +1,6 @@
 # TestWikipediaPOM
-###A vizsgált weboldal címe: Wikipedia.org
-###Tesztelő: dr. Baranyai Dóra
+A vizsgált weboldal címe: Wikipedia.org
+Tesztelő: dr. Baranyai Dóra
 A TestWikipediaPOM repository automata tesztelő képesítő vizsgához készült.
 A tesztesetek a WikiPédia_Tesztmenedzser_BaranyaiDóra elnevezésű file-ban találhatóak.
 

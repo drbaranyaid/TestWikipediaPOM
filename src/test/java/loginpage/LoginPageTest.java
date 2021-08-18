@@ -1,12 +1,18 @@
 package loginpage;
 import base.BaseTest;
+import io.qameta.allure.Allure;
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.LoginPage;
+
+import java.io.ByteArrayInputStream;
 
 
 public class LoginPageTest extends BaseTest {
@@ -58,7 +64,14 @@ public class LoginPageTest extends BaseTest {
         loginPage.typeUserName(userFalse);
         loginPage.typePassword(passFalse);
         loginPage.clickLoginButton();
+        TakeScreenshot();
         Assertions.assertTrue(driver.findElement(errorBox).getText().contains("Incorrect"));
+    }
+
+    @Step("TakeScreenshot")
+    public void TakeScreenshot(){
+        Allure.addAttachment("Screenshot", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
+        System.out.println(driver.getCurrentUrl());
     }
 
     @Test
