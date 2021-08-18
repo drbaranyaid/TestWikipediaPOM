@@ -14,7 +14,7 @@ public class PrivacyPolicyPage {
         return driver;
     }
 
-    public final By presentPolicy = (By.xpath("//*[@id=\"mw-content-text\"]/div[1]/p[7]/a[1]"));
+    public final By presentPolicy = (By.xpath("//*[@id=\"mw-content-text\"]/div[1]/p[7]"));
     public final By summary = (By.xpath("//*[@id=\"mw-content-text\"]/div[1]/div[3]/div"));
 
     public String getTextFromPolicy(){

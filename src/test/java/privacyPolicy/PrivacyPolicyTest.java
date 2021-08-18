@@ -18,7 +18,7 @@ public class PrivacyPolicyTest extends BaseTest {
         Utils utils=new Utils(driver);
         Utils.scrollDown(driver);
         PrivacyPolicyPage privacyPolicyPage=new PrivacyPolicyPage(driver);
-        Assertions.assertEquals("Amanda Keton", privacyPolicyPage.getTextFromPolicy());
+        Assertions.assertTrue(driver.findElement(privacyPolicyPage.presentPolicy).getText().contains("on June 7, 2021, pursuant to the "));
     }
 
     @Test

@@ -18,6 +18,10 @@ public class Utils {
         js.executeScript("window.scrollBy(0, 500)");
     }
 
+    public static void scrollDownFiat(WebDriver driver) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0, 2500)");
+    }
     public void setWait(By WebE) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated((By) WebE));

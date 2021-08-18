@@ -1,11 +1,13 @@
 package searchResultPage;
 
+import org.openqa.selenium.WebDriver;
 import pages.HomePage;
 import pages.SearchResultPage;
 import base.BaseTest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
+import utils.Utils;
 
 
 public class SearchResultPageTest extends BaseTest {
@@ -17,70 +19,72 @@ public class SearchResultPageTest extends BaseTest {
     public void SearchPagesListCheck() {
         SearchResultPage searchResultPage = new SearchResultPage(driver);
         homePage.searchDataGeneral("Font types");
-        String result = "Font types\n" +
-                "Ubuntu (typeface)\n" +
+        String result = "List of typefaces\n" +
+                "Typeface\n" +
+                "Computer font\n" +
+                "PostScript fonts\n" +
+                "Font\n" +
+                "TrueType\n" +
+                "OpenType\n" +
+                "Unicode font\n" +
+                "Web Open Font Format\n" +
+                "Embedded OpenType\n" +
+                "Variable font\n" +
+                "Type\n" +
+                "Font Awesome\n" +
+                "Calibri\n" +
+                "Wonton font\n" +
+                "Google Fonts\n" +
+                "ClearType\n" +
+                "Serif\n" +
+                "Liberation fonts\n" +
                 "Baptismal font\n" +
-                "Bitstream Speedo font\n" +
+                "List of typefaces\n" +
+                "Typeface\n" +
+                "Computer font\n" +
+                "PostScript fonts\n" +
+                "Font\n" +
+                "TrueType\n" +
+                "OpenType\n" +
+                "Unicode font\n" +
+                "Web Open Font Format\n" +
+                "Embedded OpenType\n" +
+                "Variable font\n" +
+                "Type\n" +
+                "Font Awesome\n" +
+                "Calibri\n" +
+                "Wonton font\n" +
+                "Google Fonts\n" +
+                "ClearType\n" +
+                "Serif\n" +
+                "Liberation fonts\n" +
+                "Baptismal font\n" +
+                "Italic type\n" +
+                "Consolas\n" +
+                "Cambria (typeface)\n" +
                 "Monospaced font\n" +
-                "Oblique type\n" +
-                "Lucida\n" +
+                "Bitstream Speedo Fonts\n" +
+                "Emphasis (typography)\n" +
+                "Fallback font\n" +
                 "Georgia (typeface)\n" +
+                "Doves Press\n" +
+                "Oblique type\n" +
+                "Type foundry\n" +
+                "Lucida\n" +
+                "Computer Modern\n" +
+                "Baptismal font\n" +
+                "Web typography\n" +
                 "Fonts on Macintosh\n" +
                 "Adobe Fonts\n" +
-                "Hobo (typeface)\n" +
-                "Type foundry\n" +
-                "Droid fonts\n" +
-                "Emphasis (typography)\n" +
-                "Cambria (typeface)\n" +
-                "Fallback font\n" +
-                "Typeface anatomy\n" +
                 "Constantia (typeface)\n" +
-                "Candara\n" +
-                "Computer Modern\n" +
-                "Croscore fonts\n" +
-                "Ubuntu (typeface)\n" +
-                "Baptismal font\n" +
-                "Bitstream Speedo Fonts\n" +
-                "Monospaced font\n" +
-                "Oblique type\n" +
-                "Lucida\n" +
-                "Georgia (typeface)\n" +
-                "Fonts on Macintosh\n" +
-                "Adobe Fonts\n" +
-                "Hobo (typeface)\n" +
-                "Type foundry\n" +
-                "Droid fonts\n" +
-                "Emphasis (typography)\n" +
-                "Cambria (typeface)\n" +
-                "Fallback font\n" +
-                "Typeface anatomy\n" +
-                "Constantia (typeface)\n" +
-                "Candara\n" +
-                "Computer Modern\n" + "Fallback font\n" +
-                "Typeface anatomy\n" +
-                "Constantia (typeface)\n" +
-                "Candara\n" +
-                "Computer Modern\n" +
-                "Croscore fonts\n" +
-                "Ubuntu (typeface)\n" +
-                "Baptismal font\n" +
-                "Bitstream Speedo Fonts\n" +
-                "Monospaced font\n" +
-                "Oblique type\n" +
-                "Lucida\n" +
-                "Georgia (typeface)\n" +
-                "Fallback font\n" +
-                "Typeface anatomy\n" +
-                "Constantia (typeface)\n" +
-                "Candara\n" +
-                "Computer Modern\n" +
-                "Croscore fonts\n" +
-                "Ubuntu (typeface)\n";
+                "List of type designers\n" +
+                "Candara";
 
-        String linktext = searchResultPage.SearchPages();
+
+        String linkText = searchResultPage.SearchPages();
         searchResultPage.ClickNext();
-        String linktext2 = linktext + searchResultPage.SearchPages();
-        Assertions.assertEquals(result, linktext2);
+        String linkText2 = linkText + searchResultPage.SearchPages();
+        Assertions.assertEquals(result, linkText2);
     }
 
     @Test
@@ -126,7 +130,7 @@ public class SearchResultPageTest extends BaseTest {
     public void testDataListNumber() {
         homePage.searchDataGeneral("green tea");
         SearchResultPage searchResultPage = new SearchResultPage(driver);
-        Assertions.assertEquals(200,searchResultPage.GreenTeaCheckNumber());
+        Assertions.assertEquals(200, searchResultPage.GreenTeaCheckNumber());
 
     }
 
@@ -137,7 +141,7 @@ public class SearchResultPageTest extends BaseTest {
         SearchResultPage searchResultPage = new SearchResultPage(driver);
         Assertions.assertTrue(searchResultPage.SearchPages().contains("Daihatsu"));
         searchResultPage.ClickNext();
-        Assertions.assertTrue(searchResultPage.SearchPages().contains("Daihatsu Wake"));
+        Assertions.assertTrue(searchResultPage.SearchPages().contains("Daihatsu"));
     }
 
     @Test
@@ -150,44 +154,119 @@ public class SearchResultPageTest extends BaseTest {
         String result = "Daihatsu\n" +
                 "Daihatsu Move\n" +
                 "Daihatsu Copen\n" +
-                "Astra Daihatsu Motor\n" +
-                "Daihatsu Tanto\n" +
                 "Daihatsu Terios\n" +
-                "Daihatsu E-series engine\n" +
-                "Daihatsu Charade\n" +
-                "Daihatsu Rugger\n" +
+                "Astra Daihatsu Motor\n" +
                 "Daihatsu Midget\n" +
-                "Daihatsu Hijet\n" +
                 "Daihatsu Mira\n" +
+                "Daihatsu Rugger\n" +
+                "Daihatsu Tanto\n" +
+                "Daihatsu Charade\n" +
+                "Daihatsu E-series engine\n" +
                 "Daihatsu Charmant\n" +
-                "Toyota SZ engine\n" +
-                "Daihatsu K-series engine\n" +
+                "Daihatsu Hijet\n" +
                 "Daihatsu Boon\n" +
+                "Toyota SZ engine\n" +
                 "Toyota Avanza\n" +
                 "Daihatsu Cast\n" +
                 "Daihatsu New Global Architecture\n" +
+                "Daihatsu Sigra\n" +
+                "Daihatsu Move Canbus\n" +
+                "Daihatsu Ayla\n" +
+                "Daihatsu Rocky (A200)\n" +
+                "Daihatsu Wake\n" +
                 "Toyota bB\n" +
-                "Daihatsu\n" +
-                "Daihatsu Move\n" +
-                "Daihatsu Copen\n" +
-                "Astra Daihatsu Motor\n" +
-                "Daihatsu Tanto\n" +
-                "Daihatsu Terios\n" +
-                "Daihatsu E-series engine\n" +
-                "Daihatsu Charade\n" +
-                "Daihatsu Rugger\n" +
-                "Daihatsu Midget\n" +
-                "Daihatsu Hijet\n" +
-                "Daihatsu Mira\n" +
-                "Daihatsu Charmant\n" +
-                "Toyota SZ engine\n" +
                 "Daihatsu K-series engine\n" +
-                "Daihatsu Boon\n" +
-                "Toyota Avanza\n" +
-                "Daihatsu Cast\n" +
+                "Daihatsu Esse\n" +
+                "Daihatsu Thor\n" +
+                "Daihatsu-class landing craft\n" +
+                "Subaru\n" +
+                "Daihatsu C-series engine\n" +
+                "Daihatsu J-series engine\n" +
+                "List of Subaru vehicles\n" +
+                "List of Toyota vehicles\n" +
+                "Perodua Myvi\n" +
+                "Daihatsu H-series engine\n" +
                 "Daihatsu Compagno\n" +
-                "Daihatsu New Global Architecture\n";
+                "Toyota KR engine\n" +
+                "Daihatsu Mira e:S\n" +
+                "Toku Daihatsu-class landing craft\n" +
+                "Daihatsu Gran Max\n";
         Assertions.assertEquals(result, searchResultPage.SearchPages());
     }
+
+    @Test
+    public void SearchAllPagesCheck() {
+        String result="Fiat 126\n" +
+                "Fiat 1300 and 1500\n" +
+                "Fiat Seicento\n" +
+                "Fiat 500\n" +
+                "Fiat 127\n" +
+                "Fiat 518\n" +
+                "Fiat S.p.A.\n" +
+                "Fiat Panda\n" +
+                "FSO Polonez\n" +
+                "Fiat 131\n" +
+                "Fiat 524\n" +
+                "Fabryka Samochodów Osobowych\n" +
+                "Fiat Twin Cam engine\n" +
+                "Nasr (car company)\n" +
+                "Fiat 508\n" +
+                "Compañía Colombiana Automotriz\n" +
+                "List of rally cars\n" +
+                "TKS\n" +
+                "Ursus A\n" +
+                "List of World War II weapons of Poland\n" +
+                "Fiat 126\n" +
+                "Fiat 1300 and 1500\n" +
+                "Fiat Seicento\n" +
+                "Fiat 500\n" +
+                "Fiat 127\n" +
+                "Fiat 518\n" +
+                "Fiat S.p.A.\n" +
+                "Fiat Panda\n" +
+                "FSO Polonez\n" +
+                "Fiat 131\n" +
+                "Fiat 524\n" +
+                "Fabryka Samochodów Osobowych\n" +
+                "Fiat Twin Cam engine\n" +
+                "Nasr (car company)\n" +
+                "Fiat 508\n" +
+                "Compañía Colombiana Automotriz\n" +
+                "List of rally cars\n" +
+                "TKS\n" +
+                "Ursus A\n" +
+                "List of World War II weapons of Poland\n" +
+                "Fiat 126\n" +
+                "Fiat 1300 and 1500\n" +
+                "Fiat Seicento\n" +
+                "Fiat 500\n" +
+                "Fiat 127\n" +
+                "Fiat 518\n" +
+                "Fiat S.p.A.\n" +
+                "Fiat Panda\n" +
+                "FSO Polonez\n" +
+                "Fiat 131\n" +
+                "Fiat 524\n" +
+                "Fabryka Samochodów Osobowych\n" +
+                "Fiat Twin Cam engine\n" +
+                "Nasr (car company)\n" +
+                "Fiat 508\n" +
+                "Compañía Colombiana Automotriz\n" +
+                "List of rally cars\n" +
+                "TKS\n" +
+                "Ursus A\n" +
+                "List of World War II weapons of Poland\n  ";
+        HomePage homePage = new HomePage(driver);
+        homePage.searchDataGeneral("Polski Fiat types");
+        SearchResultPage searchResultPage= new SearchResultPage(driver);
+        String linkText=searchResultPage.SearchPagesFiat();
+        searchResultPage.ClickNextFiat();
+        String linkText2= linkText+searchResultPage.SearchPagesFiat();
+        searchResultPage.ClickNext2Fiat();
+        String linkText3= linkText2+searchResultPage.SearchPagesFiat();
+        Assertions.assertEquals(result, linkText3);
+    }
+
+
 }
 
