@@ -3,6 +3,7 @@ import base.BaseTest;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -23,6 +24,7 @@ public class LoginPageTest extends BaseTest {
 
 
     @Test
+    @DisplayName("TC04-Bejelentkezés/valid")
     public void validLoginCheck() {
         homePage.clickLoginButton();
         loginPage = new LoginPage(driver);
@@ -36,6 +38,7 @@ public class LoginPageTest extends BaseTest {
     }
 
     @Test
+    @DisplayName("TC05-Bejelentkezés/valid")
     public void validLoginCheck2() {
         homePage.clickLoginButton();
         loginPage = new LoginPage(driver);
@@ -48,6 +51,7 @@ public class LoginPageTest extends BaseTest {
     }
 
     @Test
+    @DisplayName("TC08-Bejelentkezés/invalid")
     public void invalidLoginCheck() {
         homePage.clickLoginButton();
         loginPage = new LoginPage(driver);
@@ -58,6 +62,7 @@ public class LoginPageTest extends BaseTest {
     }
 
     @Test
+    @DisplayName("TC09-Bejelentkezés/invalid")
     public void invalidLoginCheck2() {
         homePage.clickLoginButton();
         loginPage = new LoginPage(driver);
@@ -66,6 +71,8 @@ public class LoginPageTest extends BaseTest {
         loginPage.clickLoginButton();
         TakeScreenshot();
         Assertions.assertTrue(driver.findElement(errorBox).getText().contains("Incorrect"));
+        /*amikor az eredmény false, a teszt elbukik, észleli az automata tevékenységet, és
+         captcha-t dob fel errorbox helyett, saját gépen lefut, Github-on észlel robottevékenységet */
     }
 
     @Step("TakeScreenshot")
@@ -75,6 +82,7 @@ public class LoginPageTest extends BaseTest {
     }
 
     @Test
+    @DisplayName("TC10-Bejelentkezés/invalid/special characters")
     public void ZeroLogInTest() {
         homePage.clickLoginButton();
         loginPage = new LoginPage(driver);
@@ -85,6 +93,7 @@ public class LoginPageTest extends BaseTest {
     }
 
     @Test
+    @DisplayName("TC11-Bejelentkezés/invalid/special characters")
     public void ZeroLogInTest2() {
         homePage.clickLoginButton();
         loginPage = new LoginPage(driver);

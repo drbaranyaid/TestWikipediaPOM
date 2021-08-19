@@ -2,6 +2,7 @@ package privacyPolicy;
 
 import base.BaseTest;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 
@@ -12,6 +13,7 @@ import utils.Utils;
 public class PrivacyPolicyTest extends BaseTest {
 
     @Test
+    @DisplayName("TC14-Privacy Policy/verzió,Adatkezelési nyilatkozat használata")
     public void PrivacyTestVersionCheck() {
         HomePage homePage = new HomePage(driver);
         homePage.clickPrivacyPolicyButton();
@@ -19,9 +21,11 @@ public class PrivacyPolicyTest extends BaseTest {
         Utils.scrollDown(driver);
         PrivacyPolicyPage privacyPolicyPage=new PrivacyPolicyPage(driver);
         Assertions.assertTrue(driver.findElement(privacyPolicyPage.presentPolicy).getText().contains("on June 7, 2021, pursuant to the "));
+        Assertions.assertEquals("This version was approved by Amanda Keton on June 7, 2021, pursuant to the Delegation of policy-making authority by the Board, and went into effect on June 25, 2021. Previous versions can be found below:",driver.findElement(privacyPolicyPage.presentPolicy).getText().trim());
     }
 
     @Test
+    @DisplayName("TC15-Privacy Policy/tartalom,Adatkezelési nyilatkozat használata")
     public void PrivacyTestSummaryCheck() {
         HomePage homePage = new HomePage(driver);
         homePage.clickPrivacyPolicyButton();

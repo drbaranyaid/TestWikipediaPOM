@@ -13,6 +13,11 @@ import java.io.ByteArrayInputStream;
 
 public class  SandBoxPageTest extends BaseTest {
 
+/*Ennek az oldalnak a tesztelése nem képezi a tesztelési tevékenység tartalmát, nem automatizálható,
+eléréséhez valid bejelentkezés szükséges, ami az automata tesztelési tevékenység észlelése miatt nem lehetséges,
+ez azonban csak az első tesztelések alkalmával vált nyilvánvalóvá.
+Csak a Sandbox viselkedésének a feltérképezésére szolgál*/
+
     FirstPage firstPage;
     LoginPage loginPage;
 
@@ -20,7 +25,7 @@ public class  SandBoxPageTest extends BaseTest {
     public final By textfield = By.xpath("//*[@id='wpTextbox1']");
     public final By preview = By.xpath("//*[@id='wpPreview']");
 
-    @Test
+    /*@Test
     public void repeatedData() {
         homePage.clickLoginButton();
         loginPage = new LoginPage(driver);
@@ -81,7 +86,7 @@ public class  SandBoxPageTest extends BaseTest {
         sandboxPage.clickShowPreviewButton();
         utils.setWait(preview);
         Assertions.assertTrue(driver.findElement(textfield).getText().contains("I am the new data!"));
-    }
+    }*/
 
 }
 

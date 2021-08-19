@@ -2,6 +2,7 @@ package firstPage;
 
 import base.BaseTest;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import pages.FirstPage;
@@ -17,7 +18,9 @@ public class FirstPageTest extends BaseTest {
 
     public By searchedField = By.xpath("//*[@id=\"mp-itn\"]");
 
+
     @Test
+    @DisplayName("TC06-Kijelentkezés tesztelése")
     public void LogoutTest() {
         loginPage = new LoginPage(driver);
         loginPage.ValidLogin();
@@ -28,6 +31,7 @@ public class FirstPageTest extends BaseTest {
     }
 
     @Test
+    @DisplayName("TC07-Kijelentkezés tesztelése")
     public void LogoutTest2() {
         loginPage = new LoginPage(driver);
         loginPage.ValidLogin();
@@ -38,6 +42,7 @@ public class FirstPageTest extends BaseTest {
     }
 
     @Test
+    @DisplayName("TC25-Adatok lementése felületről")
     public void SaveToFile() {
         loginPage = new LoginPage(driver);
         loginPage.ValidLogin();

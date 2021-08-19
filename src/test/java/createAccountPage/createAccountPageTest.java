@@ -14,6 +14,11 @@ import java.io.ByteArrayInputStream;
 
 public class createAccountPageTest extends BaseTest {
 
+/*Az oldalt érintő, a tesztmenedzser mappában található regisztrációs tesztesetek (TC01-TC03) manuálisan kerültek elvégzésre, tekintettel arra,
+ hogy a Github-on történő futtatás során készült fényképfelvételeknek megfelelőn a futtatás során használt IP cím blokkolásra került a Wikipédia
+ által feltehetőleg automata tevékenységek észlelése okán. Az account creation error-ról, illetve a blokkolásról készült screenshot megtekinthető
+  az alábbi CreateAccountCheck() teszt reportjának a mappájában a Github-on*/
+
     @Test
     public void CreateAccountCheck() {
         CreateAccountPage createAccountPage = new CreateAccountPage(driver);

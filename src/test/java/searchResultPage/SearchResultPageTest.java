@@ -1,5 +1,6 @@
 package searchResultPage;
 
+import org.junit.jupiter.api.DisplayName;
 import org.openqa.selenium.WebDriver;
 import pages.HomePage;
 import pages.SearchResultPage;
@@ -16,6 +17,7 @@ public class SearchResultPageTest extends BaseTest {
     private final By ResultField = By.xpath("//*[@id=\"mw-content-text\"]/div[3]/p[1]/i/a[1]");
 
     @Test
+    @DisplayName("TC21-Search/több oldalas lista bejárása/full list check")
     public void SearchPagesListCheck() {
         SearchResultPage searchResultPage = new SearchResultPage(driver);
         homePage.searchDataGeneral("Font types");
@@ -88,6 +90,7 @@ public class SearchResultPageTest extends BaseTest {
     }
 
     @Test
+    @DisplayName("TC22-Search/több oldalas lista bejárása/page check")
     public void SearchMorePagesTest2() {
         HomePage homePage = new HomePage(driver);
         homePage.searchDataGeneral("Font types");
@@ -100,6 +103,7 @@ public class SearchResultPageTest extends BaseTest {
     }
 
     @Test
+    @DisplayName("TC23-Search/több oldalas lista bejárása/contains")
     public void SearchPagesContainsCheck() {
         SearchResultPage searchResultPage = new SearchResultPage(driver);
         homePage.searchDataGeneral("Font types");
@@ -110,6 +114,7 @@ public class SearchResultPageTest extends BaseTest {
     }
 
     @Test
+    @DisplayName("TC16-Search/adatok listázása/link szöveg ellenőrzéssel")
     public void SearchOnePageResultCheck() {
         homePage.searchDataGeneral("Font types");
         Assertions.assertEquals("Font types", driver.findElement(ResultField).getText());
@@ -120,6 +125,7 @@ public class SearchResultPageTest extends BaseTest {
 
 
     @Test
+    @DisplayName("TC17-Search/adatok listázása/teljes oldalbejárással")
     public void testDataList() {
         homePage.searchDataGeneral("green tea");
         SearchResultPage searchResultPage = new SearchResultPage(driver);
@@ -127,6 +133,7 @@ public class SearchResultPageTest extends BaseTest {
     }
 
     @Test
+    @DisplayName("TC18-Search/adatok listázása/teljes oldalbejárással/találatok száma")
     public void testDataListNumber() {
         homePage.searchDataGeneral("green tea");
         SearchResultPage searchResultPage = new SearchResultPage(driver);
@@ -135,6 +142,7 @@ public class SearchResultPageTest extends BaseTest {
     }
 
     @Test
+    @DisplayName("TC19-Search/több oldalas lista bejárása/contains")
     public void SearchPagesTestSearchFieldShortDataTest() {
         HomePage homePage = new HomePage(driver);
         homePage.searchDataGeneral("Daihatsu types");
@@ -145,6 +153,7 @@ public class SearchResultPageTest extends BaseTest {
     }
 
     @Test
+    @DisplayName("TC20-Search/több oldalas lista bejárása/full list check")
     public void SearchPagesTestListCheck2() {
         HomePage homePage = new HomePage(driver);
         homePage.searchDataGeneral("Daihatsu types");
@@ -195,6 +204,7 @@ public class SearchResultPageTest extends BaseTest {
     }
 
     @Test
+    @DisplayName("TC27-Search/több oldalas lista összes oldala bejárása/full list check")
     public void SearchAllPagesCheck() {
         String result="Fiat 126\n" +
                 "Fiat 1300 and 1500\n" +
@@ -255,7 +265,7 @@ public class SearchResultPageTest extends BaseTest {
                 "List of rally cars\n" +
                 "TKS\n" +
                 "Ursus A\n" +
-                "List of World War II weapons of Poland\n  ";
+                "List of World War II weapons of Poland\n";
         HomePage homePage = new HomePage(driver);
         homePage.searchDataGeneral("Polski Fiat types");
         SearchResultPage searchResultPage= new SearchResultPage(driver);

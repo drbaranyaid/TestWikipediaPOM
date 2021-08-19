@@ -33,7 +33,7 @@ public class SearchResultPage {
         //System.out.println(result);
         return result;
     }
-    public String SearchPagesFiat() {
+    public String  SearchPagesFiat() {
         String linktext = "";
         div = driver.findElements(By.xpath("//*[@id=\"mw-content-text\"]/div[4]/ul/li/div/a"));
         for (WebElement webElement : div) {
