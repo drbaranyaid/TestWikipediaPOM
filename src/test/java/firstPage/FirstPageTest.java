@@ -4,6 +4,7 @@ import base.BaseTest;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -48,7 +49,8 @@ public class FirstPageTest extends BaseTest {
     }
 
     @Test
-    @DisplayName("TC25-Adatok lementése felületről")
+    @Disabled
+    @DisplayName("TC25-Adatok lementése felületről") // bejelentkezés captcha-t kér
     public void SaveToFile() {
         loginPage = new LoginPage(driver);
         loginPage.ValidLogin();
