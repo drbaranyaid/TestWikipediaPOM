@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import java.io.File;
 import java.io.FileWriter;
@@ -33,7 +34,7 @@ public class FirstPage {
     public StringBuilder writeToAFile() {
         try {
             FileWriter fileWriter = new FileWriter("SaveToFile.txt");
-            fileWriter.append(driver.findElement(By.xpath("//*[@id=\"mp-itn\"]")).getText()).append("\n");
+            fileWriter.append(driver.findElement(By.xpath("//*[@id='mp-itn']")).getText()).append("\n");
             fileWriter.close();
         } catch (IOException e) {
             e.printStackTrace();
