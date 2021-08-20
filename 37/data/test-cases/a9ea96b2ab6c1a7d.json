@@ -1,0 +1,125 @@
+{
+  "uid" : "a9ea96b2ab6c1a7d",
+  "name" : "TC05-Bejelentkezés/valid",
+  "fullName" : "loginpage.LoginPageTest.validLoginCheck2",
+  "historyId" : "1f28c54a79e4500fc09018130b76ee23",
+  "time" : {
+    "start" : 1629468385152,
+    "stop" : 1629468390315,
+    "duration" : 5163
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "SetUp",
+    "time" : {
+      "start" : 1629468385188,
+      "stop" : 1629468386557,
+      "duration" : 1369
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1629468390225,
+      "stop" : 1629468390309,
+      "duration" : 84
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az83-444"
+  }, {
+    "name" : "thread",
+    "value" : "6365@fv-az83-444.ForkJoinPool-1-worker-3(16)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "loginpage.LoginPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "loginpage.LoginPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "validLoginCheck2"
+  }, {
+    "name" : "suite",
+    "value" : "loginpage.LoginPageTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "fc6f50c014a72101",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/36//#testresult/fc6f50c014a72101",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629391831975,
+          "stop" : 1629391838590,
+          "duration" : 6615
+        }
+      }, {
+        "uid" : "679bb21dfaf85ce0",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/35//#testresult/679bb21dfaf85ce0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629312760352,
+          "stop" : 1629312765219,
+          "duration" : 4867
+        }
+      }, {
+        "uid" : "df40329b19906862",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/34//#testresult/df40329b19906862",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629311056584,
+          "stop" : 1629311061870,
+          "duration" : 5286
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a9ea96b2ab6c1a7d.json",
+  "parameterValues" : [ ]
+}

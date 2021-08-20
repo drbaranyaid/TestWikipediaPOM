@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://drbaranyaid.github.io/TestWikipediaPOM",
+  "buildOrder" : 37,
+  "buildName" : "GitHub Actions Run #1150929855",
+  "buildUrl" : "https://github.com/drbaranyaid/TestWikipediaPOM/actions/runs/1150929855",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/37/"
+} ]
