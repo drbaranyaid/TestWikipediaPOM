@@ -137,7 +137,7 @@ public class SearchResultPageTest extends BaseTest {
     public void testDataListNumber() {
         homePage.searchDataGeneral("green tea");
         SearchResultPage searchResultPage = new SearchResultPage(driver);
-        Assertions.assertEquals(200, searchResultPage.GreenTeaCheckNumber());
+        Assertions.assertEquals(193, searchResultPage.GreenTeaCheckNumber());
 
     }
 

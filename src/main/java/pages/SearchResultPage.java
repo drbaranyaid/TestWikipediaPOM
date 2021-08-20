@@ -62,8 +62,8 @@ public class SearchResultPage {
 
     public boolean GreenTeaCheck() {
         boolean isTestDataList = false;
-        List<WebElement> words = driver.findElements(By.xpath("//*"));
-        for (WebElement element : words) {
+        List<WebElement> elements = driver.findElements(By.xpath("//*"));
+        for (WebElement element : elements) {
             try {
                 if (element.getText().toLowerCase().contains("Green tea".toLowerCase())) {
                     System.out.println(element.getText());
