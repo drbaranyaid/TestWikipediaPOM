@@ -18,6 +18,7 @@ import java.io.ByteArrayInputStream;
 
 public class HomePageTest extends BaseTest {
     public By searchedField = By.xpath("//*[@id=\"mp-itn\"]");
+
     /*Erre a tesztre azért volt szükségem, hogy megállapítsam, hogy automata illetve manuális tesztelés esetén ugyanaz az oldal töltődik-e be
     nem képezi az érdemi teszttevékenység részét*/
     @Test

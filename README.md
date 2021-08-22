@@ -2,6 +2,10 @@
 A vizsgált weboldal címe: Wikipedia ("https://en.wikipedia.org/wiki/Main_Page")
 Tesztelő: dr. Baranyai Dóra
 A TestWikipediaPOM repository automata tesztelő képesítő vizsgához készült.
+
+A VIZSGAREMEK VÉGLEGES VERZIÓJA A SZAKKÉPESÍTŐ VIZSGÁRA A VIZSGAREMEK_DORA_BARANYAI ELNEVEZÉSŰ PUBLIKUS REPOSITORY-BAN TALÁLHATÓ A GITHUB PROFIL OLDALAMON.
+JELEN REPOSITORY CSAK A KEZDETI KÓDFEJLESZTÉSEK RÉSZLETEIT TARTALMAZZA.
+
 A tesztesetek a WikiPédia_Tesztmenedzser_BaranyaiDóra elnevezésű file-ban találhatóak a repository-ban.
 
 A kód Java nyelven íródott, Java 16 verzióval, JDK környezetben, IntellijIdea-t használva a fejlesztése során Selenium IDE és JUNIT5 framework keretében. 
@@ -17,3 +21,4 @@ illetve a várttól eltérő errorbox jelenhet meg. Ezért a tesztek kimenetele 
 
 A profil módosítása, profil adat törlése a bejelentkezés captcha problémái miatt nem voltak elérhetőek, ezért a Search mező használatával valósítottam meg ezen funkciók tesztelését a vizsgaremekben.
 A saját gépi futtatás során készült jelentések az allure-results mappában érhetőek el.
+

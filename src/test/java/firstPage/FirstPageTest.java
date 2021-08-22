@@ -47,9 +47,8 @@ public class FirstPageTest extends BaseTest {
         homePage = new HomePage(driver);
         Assertions.assertEquals("https://en.wikipedia.org/wiki/Main_Page",driver.getCurrentUrl());
     }
-
-    @Test
     @Disabled
+    @Test
     @DisplayName("TC25-Adatok lementése felületről") // bejelentkezés captcha-t kér
     public void SaveToFile() {
         loginPage = new LoginPage(driver);
