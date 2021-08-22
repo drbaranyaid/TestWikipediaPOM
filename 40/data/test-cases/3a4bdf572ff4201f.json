@@ -1,0 +1,152 @@
+{
+  "uid" : "3a4bdf572ff4201f",
+  "name" : "TC11-Bejelentkezés/invalid/special characters",
+  "fullName" : "loginpage.LoginPageTest.ZeroLogInTest2",
+  "historyId" : "6fd521975ffa863d9d350b07c49db290",
+  "time" : {
+    "start" : 1629613638172,
+    "stop" : 1629613639998,
+    "duration" : 1826
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "SetUp",
+    "time" : {
+      "start" : 1629613638174,
+      "stop" : 1629613638799,
+      "duration" : 625
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1629613639930,
+      "stop" : 1629613639998,
+      "duration" : 68
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az83-444"
+  }, {
+    "name" : "thread",
+    "value" : "6392@fv-az83-444.ForkJoinPool-1-worker-3(16)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "loginpage.LoginPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "loginpage.LoginPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "ZeroLogInTest2"
+  }, {
+    "name" : "suite",
+    "value" : "loginpage.LoginPageTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "25368656461f38b6",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/39//#testresult/25368656461f38b6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629471271436,
+          "stop" : 1629471273155,
+          "duration" : 1719
+        }
+      }, {
+        "uid" : "fe690d0243cefa35",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/38//#testresult/fe690d0243cefa35",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629469937759,
+          "stop" : 1629469939441,
+          "duration" : 1682
+        }
+      }, {
+        "uid" : "fae9109cec3ec32e",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/37//#testresult/fae9109cec3ec32e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629468390386,
+          "stop" : 1629468391972,
+          "duration" : 1586
+        }
+      }, {
+        "uid" : "39945ddebecc7f46",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/36//#testresult/39945ddebecc7f46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629391838650,
+          "stop" : 1629391840243,
+          "duration" : 1593
+        }
+      }, {
+        "uid" : "118402cca0816306",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/35//#testresult/118402cca0816306",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629312765295,
+          "stop" : 1629312767003,
+          "duration" : 1708
+        }
+      }, {
+        "uid" : "863517cdc6c1af1f",
+        "reportUrl" : "https://drbaranyaid.github.io/TestWikipediaPOM/34//#testresult/863517cdc6c1af1f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629311061957,
+          "stop" : 1629311063968,
+          "duration" : 2011
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "3a4bdf572ff4201f.json",
+  "parameterValues" : [ ]
+}
